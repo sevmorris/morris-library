@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Morris Library</title>
+<meta name="description" content="A personal book catalog.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column of catalog rows, grouped under sticky-free section heads; spine-style condensed titles */
+:root{
+  color-scheme:light;
+  --bg:#eef0f3; --surface:#ffffff; --fg:#15181e; --muted:#5b6270; --rule:#d3d7de;
+  --accent:#2341a6; --gold:#a87400;
+  --f-display:"Barlow Condensed","Arial Narrow",Impact,sans-serif;
+  --f-body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#111318; --surface:#1a1d24; --fg:#e7e9ee; --muted:#9ba2af; --rule:#2c313b;
+  --accent:#93a8ff; --gold:#e3b54a; color-scheme:dark}}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.45}
+.wrap{max-width:780px;margin:0 auto;padding-block:28px 64px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+header{display:grid;gap:4px;margin-bottom:18px}
+.eyebrow{font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(40px,9vw,58px);line-height:.95;margin:0;letter-spacing:.01em;text-transform:uppercase;text-wrap:balance}
+.tally{color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
+.tally b{color:var(--fg);font-weight:600}
+
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:18px 0 6px}
+.search{flex:1 1 220px;min-width:0;font:inherit;padding:9px 12px;border:1px solid var(--rule);border-radius:6px;background:var(--surface);color:var(--fg)}
+.search:focus-visible,.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.seg{display:flex;flex-wrap:wrap;gap:2px;font-size:13px}
+.seg span{color:var(--muted);margin-right:6px;align-self:center;font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+.seg button{font:500 13px var(--f-body);background:none;border:0;padding:5px 9px;border-radius:4px;color:var(--muted);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+
+.group{margin-top:22px}
+.ghead{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--fg);padding-bottom:4px;margin-bottom:2px}
+.ghead h2{font-family:var(--f-display);font-weight:600;font-size:20px;margin:0;text-transform:uppercase;letter-spacing:.03em}
+.ghead small{font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+
+.row{display:grid;grid-template-columns:1fr auto;gap:2px 16px;padding:11px 4px;border-bottom:1px solid var(--rule)}
+.row .t{font-family:var(--f-display);font-weight:600;font-size:21px;line-height:1.1;min-width:0}
+.row .a{grid-column:1;color:var(--fg);font-size:14px}
+.row .yr{grid-row:1;grid-column:2;font-family:var(--f-mono);font-size:12px;color:var(--muted);align-self:center;font-variant-numeric:tabular-nums}
+.row .m{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12.5px;color:var(--muted);margin-top:3px}
+.chip{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:1px 6px;border-radius:3px;border:1px solid currentColor}
+.chip.series{color:var(--accent)}
+.chip.award{color:var(--gold)}
+
+.state{padding:40px 8px;text-align:center;color:var(--muted)}
+.state strong{display:block;font-family:var(--f-display);font-size:24px;color:var(--fg);text-transform:uppercase;margin-bottom:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Catalog · paperbacks &amp; beyond</div>
+    <h1>Morris Library</h1>
+    <div class="tally" id="tally">Loading the catalog…</div>
+  </header>
+
+  <div class="controls">
+    <input id="q" class="search" type="search" placeholder="Search title, author, series, ISBN" aria-label="Search the catalog">
+  </div>
+  <div class="seg" role="group" aria-label="Group by">
+    <span>Group by</span>
+    <button type="button" data-k="author" aria-pressed="true">Author</button>
+    <button type="button" data-k="title" aria-pressed="false">Title</button>
+    <button type="button" data-k="publisher" aria-pressed="false">Publisher</button>
+    <button type="button" data-k="decade" aria-pressed="false">Decade</button>
+  </div>
+
+  <main id="list">
+    <div class="state"><strong>Fetching the catalog</strong>Books appear here as soon as the record loads.</div>
+  </main>
+</div>
+
+<script>
+(function(){
+  const $ = s => document.querySelector(s);
+  let books = [], groupKey = "author", query = "";
+
+  try { const g = localStorage.getItem("ml-group"); if (g && document.querySelector(`.seg button[data-k="${g}"]`)) groupKey = g; } catch(e) {}
+  syncSeg();
+
+  function esc(s){ return String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+  function sortAuthor(b){ if (b.authorSort) return b.authorSort; const p = String(b.author||"").trim().split(/\s+/); return p.length>1 ? p[p.length-1]+", "+p.slice(0,-1).join(" ") : (b.author||""); }
+  function sortTitle(t){ return String(t||"").replace(/^(the|a|an)\s+/i,""); }
+  function decade(y){ const n = parseInt(y,10); return isNaN(n) ? "Undated" : (Math.floor(n/10)*10)+"s"; }
+
+  function groupOf(b){
+    switch(groupKey){
+      case "author": return sortAuthor(b).charAt(0).toUpperCase() || "?";
+      case "title": return sortTitle(b.title).charAt(0).toUpperCase() || "?";
+      case "publisher": return b.publisher || "Unknown publisher";
+      case "decade": return decade(b.year);
+    }
+  }
+  function cmp(a,b){
+    const sa = sortAuthor(a).toLowerCase(), sb = sortAuthor(b).toLowerCase();
+    const bySeries = (a.series||"")===(b.series||"") && a.series ? (Number(a.seriesNo)||0)-(Number(b.seriesNo)||0) : 0;
+    if (groupKey==="title") return sortTitle(a.title).localeCompare(sortTitle(b.title));
+    if (groupKey==="decade") return (Number(a.year)||9999)-(Number(b.year)||9999) || sa.localeCompare(sb);
+    return sa.localeCompare(sb) || (a.series||"~").localeCompare(b.series||"~") || bySeries || sortTitle(a.title).localeCompare(sortTitle(b.title));
+  }
+
+  function render(){
+    const list = $("#list");
+    const authors = new Set(books.map(b => (b.author||"").trim()).filter(Boolean));
+    const pubs = new Set(books.map(b => b.publisher).filter(Boolean));
+    $("#tally").innerHTML = books.length
+      ? `<b>${books.length}</b> book${books.length===1?"":"s"} · <b>${authors.size}</b> author${authors.size===1?"":"s"} · <b>${pubs.size}</b> imprint${pubs.size===1?"":"s"}`
+      : "No books catalogued yet";
+    if (!books.length){
+      list.innerHTML = `<div class="state"><strong>An empty catalog</strong>No books have been added yet.</div>`;
+      return;
+    }
+    const q = query.trim().toLowerCase();
+    const shown = books.filter(b => !q || [b.title,b.author,b.series,b.publisher,b.isbn,b.notes].join(" ").toLowerCase().includes(q)).sort(cmp);
+    if (!shown.length){ list.innerHTML = `<div class="state"><strong>No matches</strong>Nothing in the catalog matches “${esc(query)}”.</div>`; return; }
+    const groups = new Map();
+    for (const b of shown){ const g = groupOf(b); if(!groups.has(g)) groups.set(g,[]); groups.get(g).push(b); }
+    let keys = [...groups.keys()];
+    if (groupKey==="publisher") keys.sort((a,b)=>a.localeCompare(b));
+    if (groupKey==="decade") keys.sort();
+    list.innerHTML = keys.map(k => {
+      const items = groups.get(k);
+      return `<section class="group"><div class="ghead"><h2>${esc(k)}</h2><small>${items.length}</small></div>` +
+        items.map(b => {
+          const meta = [];
+          const award = /hugo|nebula/i.test(b.notes||"");
+          if (b.series) meta.push(`<span class="chip series">${esc(b.series)}${b.seriesNo?` #${esc(b.seriesNo)}`:""}</span>`);
+          if (award) meta.push(`<span class="chip award">${esc((b.notes.match(/(Hugo(?: and | & )?Nebula|Hugo|Nebula)[^.;]*/i)||[""])[0].replace(/ winner.*$/i,""))}</span>`);
+          if (b.publisher) meta.push(`<span>${esc(b.publisher)}</span>`);
+          if (b.format) meta.push(`<span>${esc(b.format)}</span>`);
+          if (b.notes && !award) meta.push(`<span>${esc(b.notes)}</span>`);
+          return `<article class="row">
+            <span class="t">${esc(b.title)}</span><span class="yr">${esc(b.year||"")}</span>
+            <span class="a">${esc(b.author)}</span>
+            <span class="m">${meta.join("")}</span></article>`;
+        }).join("") + `</section>`;
+    }).join("");
+  }
+
+  function syncSeg(){ document.querySelectorAll(".seg button").forEach(btn => btn.setAttribute("aria-pressed", String(btn.dataset.k===groupKey))); }
+  document.querySelector(".seg").addEventListener("click", e => {
+    const k = e.target.closest("button")?.dataset.k; if(!k) return;
+    groupKey = k; syncSeg(); try{ localStorage.setItem("ml-group",k); }catch(err){} render();
+  });
+  $("#q").addEventListener("input", e => { query = e.target.value; render(); });
+
+  fetch("books.json")
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(data => { books = data; render(); })
+    .catch(() => {
+      $("#tally").textContent = "The catalog couldn't be loaded.";
+      $("#list").innerHTML = `<div class="state"><strong>Catalog unavailable</strong>Reload the page to try again.</div>`;
+    });
+})();
+</script>
+</body>
+</html>
