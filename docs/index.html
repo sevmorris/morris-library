@@ -73,6 +73,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(40px,9vw,58px);l
     <span>Group by</span>
     <button type="button" data-k="author" aria-pressed="true">Author</button>
     <button type="button" data-k="title" aria-pressed="false">Title</button>
+    <button type="button" data-k="series" aria-pressed="false">Series</button>
     <button type="button" data-k="publisher" aria-pressed="false">Publisher</button>
     <button type="button" data-k="decade" aria-pressed="false">Decade</button>
   </div>
@@ -85,6 +86,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(40px,9vw,58px);l
 <script>
 (function(){
   const $ = s => document.querySelector(s);
+  const NO_SERIES = "Not in a series";
   let books = [], groupKey = "author", query = "";
 
   try { const g = localStorage.getItem("ml-group"); if (g && document.querySelector(`.seg button[data-k="${g}"]`)) groupKey = g; } catch(e) {}
@@ -99,6 +101,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(40px,9vw,58px);l
     switch(groupKey){
       case "author": return sortAuthor(b).charAt(0).toUpperCase() || "?";
       case "title": return sortTitle(b.title).charAt(0).toUpperCase() || "?";
+      case "series": return b.series || NO_SERIES;
       case "publisher": return b.publisher || "Unknown publisher";
       case "decade": return decade(b.year);
     }
@@ -108,6 +111,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(40px,9vw,58px);l
     const bySeries = (a.series||"")===(b.series||"") && a.series ? (Number(a.seriesNo)||0)-(Number(b.seriesNo)||0) : 0;
     if (groupKey==="title") return sortTitle(a.title).localeCompare(sortTitle(b.title));
     if (groupKey==="decade") return (Number(a.year)||9999)-(Number(b.year)||9999) || sa.localeCompare(sb);
+    if (groupKey==="series") return (Number(a.seriesNo)||9999)-(Number(b.seriesNo)||9999) || sa.localeCompare(sb) || sortTitle(a.title).localeCompare(sortTitle(b.title));
     return sa.localeCompare(sb) || (a.series||"~").localeCompare(b.series||"~") || bySeries || sortTitle(a.title).localeCompare(sortTitle(b.title));
   }
 
@@ -129,6 +133,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(40px,9vw,58px);l
     for (const b of shown){ const g = groupOf(b); if(!groups.has(g)) groups.set(g,[]); groups.get(g).push(b); }
     let keys = [...groups.keys()];
     if (groupKey==="publisher") keys.sort((a,b)=>a.localeCompare(b));
+    if (groupKey==="series") keys.sort((a,b)=>(a===NO_SERIES)-(b===NO_SERIES) || sortTitle(a).localeCompare(sortTitle(b)));
     if (groupKey==="decade") keys.sort();
     list.innerHTML = keys.map(k => {
       const items = groups.get(k);
