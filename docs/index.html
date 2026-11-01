@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Morris Library</title>
+<title>Seven’s Library: A Selection</title>
 <meta name="description" content="A personal book catalog.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#e6edf3">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#101a24">
@@ -34,6 +34,7 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f-body);fon
 
 header{display:grid;gap:6px;padding-top:max(28px,env(safe-area-inset-top,0px));padding-bottom:16px}
 h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);line-height:.92;margin:0;letter-spacing:.005em;text-transform:uppercase;text-wrap:balance}
+h1 span{display:block;font-weight:500;font-size:.42em;line-height:1.2;letter-spacing:.06em;color:var(--accent)}
 .tally{color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
 .tally b{color:var(--fg);font-weight:600}
 
@@ -77,7 +78,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
 <body>
 <div class="wrap">
   <header>
-    <h1>Morris Library</h1>
+    <h1>Seven’s Library <span>A Selection</span></h1>
     <div class="tally" id="tally" role="status">Loading the catalog…</div>
   </header>
 
