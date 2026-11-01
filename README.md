@@ -1,4 +1,4 @@
-# Morris Library
+# Seven’s Library: A Selection
 
 A personal book catalog, published with GitHub Pages at
 <https://sevmorris.github.io/morris-library/>.
