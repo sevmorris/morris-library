@@ -109,7 +109,7 @@ footer a{color:inherit}
     <div class="state"><strong>Fetching the catalog</strong>Books appear here as soon as the record loads.</div>
   </main>
 
-  <footer>Cover images from <a href="https://openlibrary.org/">Open Library</a>. Some show a different edition from the copy on the shelf.</footer>
+  <footer>Most cover images are from <a href="https://openlibrary.org/">Open Library</a>, and some show a different edition from the copy on the shelf. Covers remain the property of their copyright holders.</footer>
 </div>
 
 <script>
@@ -206,8 +206,9 @@ footer a{color:inherit}
             prevSet = setOf(b);
             setHead = `<p class="set"><span>${esc(prevSet||"Other books")}</span><span class="count">${items.filter(x => setOf(x)===prevSet).length}</span></p>`;
           }
-          const cover = b.coverId
-            ? `<img class="cover" src="https://covers.openlibrary.org/b/id/${esc(b.coverId)}-M.jpg" width="88" height="132" loading="lazy" decoding="async" alt="">`
+          const coverSrc = b.coverFile ? esc(b.coverFile) : b.coverId ? `https://covers.openlibrary.org/b/id/${esc(b.coverId)}-M.jpg` : "";
+          const cover = coverSrc
+            ? `<img class="cover" src="${coverSrc}" width="88" height="132" loading="lazy" decoding="async" alt="">`
             : `<span class="cover"></span>`;
           return `${setHead}<article class="row">${cover}
             <h3>${groupKey==="author"&&b.readingOrder?`<span class="step">${esc(b.readingOrder)}.</span> `:""}${esc(b.title)}</h3><span class="yr">${esc(b.year||"")}</span>
