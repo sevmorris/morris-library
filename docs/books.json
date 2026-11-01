@@ -1,27 +1,5 @@
 [
   {
-    "id": "a-divine-language",
-    "title": "A Divine Language",
-    "author": "Alec Wilkinson",
-    "authorSort": "Wilkinson, Alec",
-    "publisher": "FSG",
-    "year": "2022",
-    "format": "Hardcover",
-    "notes": "Nonfiction.",
-    "added": "2026-10-31"
-  },
-  {
-    "id": "a-mind-at-play",
-    "title": "A Mind at Play",
-    "author": "Jimmy Soni & Rob Goodman",
-    "authorSort": "Soni, Jimmy",
-    "publisher": "Simon & Schuster",
-    "year": "2017",
-    "format": "Trade paperback",
-    "notes": "Nonfiction. Biography of Claude Shannon.",
-    "added": "2026-10-31"
-  },
-  {
     "id": "a-peculiar-peril",
     "title": "A Peculiar Peril",
     "author": "Jeff VanderMeer",
@@ -209,17 +187,6 @@
     "year": "1968",
     "price": "$3.50",
     "format": "Mass-market paperback",
-    "added": "2026-10-31"
-  },
-  {
-    "id": "captain-cook",
-    "title": "Captain Cook",
-    "author": "Alistair MacLean",
-    "authorSort": "MacLean, Alistair",
-    "publisher": "Doubleday",
-    "year": "1972",
-    "format": "Hardcover",
-    "notes": "Nonfiction.",
     "added": "2026-10-31"
   },
   {
@@ -624,17 +591,6 @@
     "added": "2026-10-31"
   },
   {
-    "id": "inside-mayberry",
-    "title": "Inside Mayberry",
-    "author": "Dan Harrison & Bill Habeeb",
-    "authorSort": "Harrison, Dan",
-    "publisher": "HarperPerennial",
-    "year": "1994",
-    "format": "Trade paperback",
-    "notes": "Nonfiction.",
-    "added": "2026-10-31"
-  },
-  {
     "id": "jack-four",
     "title": "Jack Four",
     "author": "Neal Asher",
@@ -726,18 +682,6 @@
     "added": "2026-10-31"
   },
   {
-    "id": "mathematics-for-the-nonmathematician",
-    "title": "Mathematics for the Nonmathematician",
-    "author": "Morris Kline",
-    "authorSort": "Kline, Morris",
-    "publisher": "Dover",
-    "year": "1967",
-    "isbn": "0-486-24823-2",
-    "format": "Trade paperback",
-    "notes": "Nonfiction.",
-    "added": "2026-10-31"
-  },
-  {
     "id": "mindstar-rising",
     "title": "Mindstar Rising",
     "author": "Peter F. Hamilton",
@@ -824,18 +768,6 @@
     "added": "2026-10-31"
   },
   {
-    "id": "never-cry-wolf",
-    "title": "Never Cry Wolf",
-    "author": "Farley Mowat",
-    "authorSort": "Mowat, Farley",
-    "publisher": "Dell",
-    "year": "1963",
-    "price": "$0.95",
-    "format": "Mass-market paperback",
-    "notes": "Nonfiction. Dell no. 06299 on spine.",
-    "added": "2026-10-31"
-  },
-  {
     "id": "night-without-end",
     "title": "Night Without End",
     "author": "Alistair MacLean",
@@ -878,17 +810,6 @@
     "price": "$0.95",
     "format": "Mass-market paperback",
     "notes": "Pocket no. 77143 on spine.",
-    "added": "2026-10-31"
-  },
-  {
-    "id": "on-desperate-ground",
-    "title": "On Desperate Ground",
-    "author": "Hampton Sides",
-    "authorSort": "Sides, Hampton",
-    "publisher": "Anchor",
-    "year": "2018",
-    "format": "Trade paperback",
-    "notes": "Nonfiction.",
     "added": "2026-10-31"
   },
   {
@@ -1166,16 +1087,6 @@
     "added": "2026-10-31"
   },
   {
-    "id": "shadows-of-the-mind",
-    "title": "Shadows of the Mind",
-    "author": "Roger Penrose",
-    "authorSort": "Penrose, Roger",
-    "publisher": "Oxford University Press",
-    "year": "1994",
-    "notes": "Nonfiction.",
-    "added": "2026-10-31"
-  },
-  {
     "id": "sitka",
     "title": "Sitka",
     "author": "Louis L'Amour",
@@ -1251,17 +1162,6 @@
     "added": "2026-10-31"
   },
   {
-    "id": "the-book-of-eels",
-    "title": "The Book of Eels",
-    "author": "Patrik Svensson",
-    "authorSort": "Svensson, Patrik",
-    "publisher": "Ecco",
-    "year": "2020",
-    "format": "Hardcover",
-    "notes": "Nonfiction.",
-    "added": "2026-10-31"
-  },
-  {
     "id": "the-californios",
     "title": "The Californios",
     "author": "Louis L'Amour",
@@ -1270,17 +1170,6 @@
     "year": "1974",
     "price": "$3.99",
     "format": "Mass-market paperback",
-    "added": "2026-10-31"
-  },
-  {
-    "id": "the-cathedral-and-the-bazaar",
-    "title": "The Cathedral & the Bazaar",
-    "author": "Eric S. Raymond",
-    "authorSort": "Raymond, Eric S.",
-    "publisher": "O'Reilly",
-    "year": "1999",
-    "format": "Trade paperback",
-    "notes": "Nonfiction.",
     "added": "2026-10-31"
   },
   {
@@ -1306,17 +1195,6 @@
     "price": "$1.95",
     "format": "Mass-market paperback",
     "notes": "First published as Junkyard Planet.",
-    "added": "2026-10-31"
-  },
-  {
-    "id": "the-dancing-wu-li-masters",
-    "title": "The Dancing Wu Li Masters",
-    "author": "Gary Zukav",
-    "authorSort": "Zukav, Gary",
-    "publisher": "Morrow Quill",
-    "year": "1979",
-    "format": "Trade paperback",
-    "notes": "Nonfiction.",
     "added": "2026-10-31"
   },
   {
@@ -1375,16 +1253,6 @@
     "added": "2026-10-31"
   },
   {
-    "id": "the-emperors-new-mind",
-    "title": "The Emperor's New Mind",
-    "author": "Roger Penrose",
-    "authorSort": "Penrose, Roger",
-    "publisher": "Oxford University Press",
-    "year": "1989",
-    "notes": "Nonfiction.",
-    "added": "2026-10-31"
-  },
-  {
     "id": "the-engineer-reconditioned",
     "title": "The Engineer ReConditioned",
     "author": "Neal Asher",
@@ -1417,15 +1285,6 @@
     "isbn": "0-553-25303-4",
     "price": "$3.99",
     "format": "Mass-market paperback",
-    "added": "2026-10-31"
-  },
-  {
-    "id": "the-girl-on-the-train",
-    "title": "The Girl on the Train",
-    "author": "Paula Hawkins",
-    "authorSort": "Hawkins, Paula",
-    "publisher": "Doubleday",
-    "year": "2015",
     "added": "2026-10-31"
   },
   {
@@ -1514,25 +1373,6 @@
     "year": "1985",
     "format": "Hardcover",
     "notes": "Story collection.",
-    "added": "2026-10-31"
-  },
-  {
-    "id": "the-new-testament-lattimore",
-    "title": "The New Testament",
-    "author": "Richmond Lattimore",
-    "authorSort": "Lattimore, Richmond",
-    "notes": "Lattimore translation. Only partly visible in photo.",
-    "added": "2026-10-31"
-  },
-  {
-    "id": "the-obstacle-is-the-way",
-    "title": "The Obstacle Is the Way",
-    "author": "Ryan Holiday",
-    "authorSort": "Holiday, Ryan",
-    "publisher": "Portfolio / Penguin",
-    "year": "2014",
-    "format": "Hardcover",
-    "notes": "Nonfiction.",
     "added": "2026-10-31"
   },
   {
@@ -1680,16 +1520,6 @@
     "added": "2026-10-31"
   },
   {
-    "id": "the-valley-of-decision",
-    "title": "The Valley of Decision",
-    "author": "Marcia Davenport",
-    "authorSort": "Davenport, Marcia",
-    "publisher": "University of Pittsburgh Press",
-    "year": "1942",
-    "format": "Trade paperback",
-    "added": "2026-10-31"
-  },
-  {
     "id": "the-voyage-of-the-sable-keech",
     "title": "The Voyage of the Sable Keech",
     "author": "Neal Asher",
@@ -1775,16 +1605,6 @@
     "year": "1971",
     "price": "$3.99",
     "format": "Mass-market paperback",
-    "added": "2026-10-31"
-  },
-  {
-    "id": "uncle-wiggily-and-his-friends",
-    "title": "Uncle Wiggily and His Friends",
-    "author": "Howard R. Garis",
-    "authorSort": "Garis, Howard R.",
-    "series": "Uncle Wiggily",
-    "format": "Hardcover",
-    "notes": "Author not on spine.",
     "added": "2026-10-31"
   },
   {
@@ -1879,17 +1699,6 @@
     "publisher": "Bantam",
     "year": "1976",
     "format": "Mass-market paperback",
-    "added": "2026-10-31"
-  },
-  {
-    "id": "where-wizards-stay-up-late",
-    "title": "Where Wizards Stay Up Late",
-    "author": "Katie Hafner & Matthew Lyon",
-    "authorSort": "Hafner, Katie",
-    "publisher": "Simon & Schuster",
-    "year": "1996",
-    "format": "Trade paperback",
-    "notes": "Nonfiction.",
     "added": "2026-10-31"
   },
   {
