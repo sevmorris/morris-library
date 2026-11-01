@@ -26,5 +26,6 @@ All values are strings. `id`, `title`, `author` and `added` are required.
 | `readingGroup`, `readingOrder` | The set of books to read together, and this book's place in it, counting only books in the catalog. Second copies share a number. Author view lists each author's books under these sets, in this order |
 | `isbn`, `price` | Stored but not shown on the page. The ISBN is searchable |
 | `notes` | Shown on the page. "Hugo" or "Nebula" here shows an award chip instead |
+| `summary` | A short, spoiler-light description, shown in a drop-down. Written for this catalog, not copied from publisher blurbs |
 | `coverId` | Open Library cover id. The page loads the image from `covers.openlibrary.org/b/id/<coverId>-M.jpg`, and shows a blank block without one |
 | `added` | Date catalogued, as `YYYY-MM-DD` |
