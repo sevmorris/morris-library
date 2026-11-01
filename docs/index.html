@@ -48,8 +48,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
 .seg button[aria-pressed="true"]{background:var(--accent);color:var(--bg)}
 @media (max-width:520px){
   .seg>span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
-  .seg button{flex:1 1 auto;min-height:40px;padding-inline:3px;font-size:13.5px}
-  .seg .more{display:none}
+  .seg button{flex:1 1 auto;min-height:40px;padding-inline:4px}
 }
 
 .group{margin-top:14px}
@@ -57,7 +56,9 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
 .ghead h2{font-family:var(--f-display);font-weight:600;font-size:21px;line-height:1.15;margin:0;text-transform:uppercase;letter-spacing:.03em}
 .ghead h2.plain{text-transform:none}
 .ghead h2.author{font-weight:700;font-size:26px;line-height:1.1}
-.count{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.count{font-family:var(--f-mono);font-size:12px;font-weight:400;letter-spacing:0;color:var(--muted)}
+
+.set{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:14px 0 0;padding-bottom:3px;border-bottom:1px solid var(--rule);font:600 16px/1.2 var(--f-display);letter-spacing:.04em;text-transform:uppercase;color:var(--accent)}
 
 .row{display:grid;grid-template-columns:1fr auto;gap:0 16px;padding:8px 0 9px;border-bottom:1px solid var(--rule)}
 .row h3{font-family:var(--f-display);font-weight:600;font-size:21px;line-height:1.15;margin:0;min-width:0}
@@ -86,10 +87,8 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
       <span>Group by</span>
       <button type="button" data-k="author" aria-pressed="true">Author</button>
       <button type="button" data-k="title" aria-pressed="false">Title</button>
-      <button type="button" data-k="series" aria-pressed="false">Series</button>
       <button type="button" data-k="publisher" aria-pressed="false">Publisher</button>
       <button type="button" data-k="decade" aria-pressed="false">Decade</button>
-      <button type="button" data-k="reading" aria-pressed="false">Reading<span class="more"> order</span></button>
     </div>
   </div>
 
@@ -101,7 +100,6 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
 <script>
 (function(){
   const $ = s => document.querySelector(s);
-  const NO_SERIES = "Not in a series";
   let books = [], groupKey = "author", query = "";
 
   try { const g = localStorage.getItem("ml-group"); if (g && document.querySelector(`.seg button[data-k="${g}"]`)) groupKey = g; } catch(e) {}
@@ -117,15 +115,21 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
   function sortTitle(t){ return String(t||"").replace(/^(the|a|an)\s+/i,""); }
   function decade(y){ const n = parseInt(y,10); return isNaN(n) ? "Undated" : (Math.floor(n/10)*10)+"s"; }
   function plural(n,word){ return `${n} ${word}${n===1?"":"s"}`; }
+  const isSecondCopy = b => /second copy/i.test(b.notes||"");
+
+  // The set a book sits under in Author view. A series with only one title owned isn't worth a heading of its own.
+  function setOf(b){
+    if (b.readingGroup) return b.readingGroup;
+    if (!b.series) return "";
+    return new Set(books.filter(x => x.author===b.author && x.series===b.series).map(x => x.title)).size>1 ? b.series : "";
+  }
 
   function groupOf(b){
     switch(groupKey){
       case "author": return authorHead(b) || "?";
       case "title": return sortTitle(b.title).charAt(0).toUpperCase() || "?";
-      case "series": return b.series || NO_SERIES;
       case "publisher": return b.publisher || "Unknown publisher";
       case "decade": return decade(b.year);
-      case "reading": return b.readingGroup;
     }
   }
   function cmp(a,b){
@@ -133,8 +137,12 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
     const bySeries = (a.series||"")===(b.series||"") && a.series ? (Number(a.seriesNo)||0)-(Number(b.seriesNo)||0) : 0;
     if (groupKey==="title") return sortTitle(a.title).localeCompare(sortTitle(b.title));
     if (groupKey==="decade") return (Number(a.year)||9999)-(Number(b.year)||9999) || sa.localeCompare(sb);
-    if (groupKey==="reading") return Number(a.readingOrder)-Number(b.readingOrder) || /second copy/i.test(a.notes||"")-/second copy/i.test(b.notes||"");
-    if (groupKey==="series") return (Number(a.seriesNo)||9999)-(Number(b.seriesNo)||9999) || sa.localeCompare(sb) || sortTitle(a.title).localeCompare(sortTitle(b.title));
+    if (groupKey==="author"){
+      const setA = setOf(a), setB = setOf(b);
+      return sa.localeCompare(sb) || (!setA)-(!setB) || sortTitle(setA).localeCompare(sortTitle(setB))
+        || (Number(a.readingOrder)||9999)-(Number(b.readingOrder)||9999)
+        || sortTitle(a.title).localeCompare(sortTitle(b.title)) || isSecondCopy(a)-isSecondCopy(b);
+    }
     return sa.localeCompare(sb) || (a.series||"~").localeCompare(b.series||"~") || bySeries || sortTitle(a.title).localeCompare(sortTitle(b.title));
   }
 
@@ -143,9 +151,8 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
     const meta = [];
     const no = b.seriesNo ? `#${esc(b.seriesNo)}` : "";
     const award = /hugo|nebula/i.test(b.notes||"");
-    if (groupKey==="series" && no) meta.push(`<span class="series">${no}</span>`);
     if (groupKey!=="author") meta.push(`<span class="by">${esc(b.author)}</span>`);
-    if (groupKey!=="series" && b.series && !(groupKey==="reading" && b.series===b.readingGroup)) meta.push(`<span class="series">${esc(b.series)}${no?" "+no:""}</span>`);
+    if (b.series && !(groupKey==="author" && b.series===setOf(b))) meta.push(`<span class="series">${esc(b.series)}${no?" "+no:""}</span>`);
     if (award) meta.push(`<span class="award">${esc((b.notes.match(/(Hugo(?: and | & )?Nebula|Hugo|Nebula)[^.;]*/i)||[""])[0].replace(/ winner.*$/i,""))}</span>`);
     if (groupKey!=="publisher" && b.publisher) meta.push(`<span>${esc(b.publisher)}</span>`);
     if (b.format) meta.push(`<span>${esc(b.format.replace(/ paperback$/i,""))}</span>`);
@@ -158,9 +165,9 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
     const authors = new Set(books.map(b => (b.author||"").trim()).filter(Boolean));
     const pubs = new Set(books.map(b => b.publisher).filter(Boolean));
     const q = query.trim().toLowerCase();
-    const shown = books.filter(b => (groupKey!=="reading" || b.readingGroup) && (!q || [b.title,b.author,b.series,b.publisher,b.isbn,b.notes].join(" ").toLowerCase().includes(q))).sort(cmp);
+    const shown = books.filter(b => !q || [b.title,b.author,b.series,b.publisher,b.isbn,b.notes].join(" ").toLowerCase().includes(q)).sort(cmp);
     $("#tally").innerHTML = !books.length ? "No books catalogued yet"
-      : q || groupKey==="reading" ? `<b>${shown.length}</b> of ${plural(books.length,"book")}${groupKey==="reading"?" in a reading order":""}`
+      : q ? `<b>${shown.length}</b> of ${plural(books.length,"book")}`
       : `<b>${books.length}</b> book${books.length===1?"":"s"} · <b>${authors.size}</b> author${authors.size===1?"":"s"} · <b>${pubs.size}</b> imprint${pubs.size===1?"":"s"}`;
     if (!books.length){
       list.innerHTML = `<div class="state"><strong>An empty catalog</strong>No books have been added yet.</div>`;
@@ -171,16 +178,21 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
     for (const b of shown){ const g = groupOf(b); if(!groups.has(g)) groups.set(g,[]); groups.get(g).push(b); }
     let keys = [...groups.keys()];
     if (groupKey==="publisher") keys.sort((a,b)=>a.localeCompare(b));
-    if (groupKey==="series") keys.sort((a,b)=>(a===NO_SERIES)-(b===NO_SERIES) || sortTitle(a).localeCompare(sortTitle(b)));
-    if (groupKey==="reading") keys.sort((a,b)=>sortTitle(a).localeCompare(sortTitle(b)));
     if (groupKey==="decade") keys.sort();
     list.innerHTML = keys.map(k => {
       const items = groups.get(k);
       const headClass = groupKey==="decade" ? ' class="plain"' : groupKey==="author" ? ' class="author"' : "";
+      const showSets = groupKey==="author" && items.some(setOf);
+      let prevSet = null;
       return `<section class="group"><div class="ghead"><h2${headClass}>${esc(k)}</h2><span class="count">${items.length}</span></div>` +
         items.map(b => {
-          return `<article class="row">
-            <h3>${groupKey==="reading"?`<span class="step">${esc(b.readingOrder)}.</span> `:""}${esc(b.title)}</h3><span class="yr">${esc(b.year||"")}</span>
+          let setHead = "";
+          if (showSets && setOf(b)!==prevSet){
+            prevSet = setOf(b);
+            setHead = `<p class="set"><span>${esc(prevSet||"Other books")}</span><span class="count">${items.filter(x => setOf(x)===prevSet).length}</span></p>`;
+          }
+          return `${setHead}<article class="row">
+            <h3>${groupKey==="author"&&b.readingOrder?`<span class="step">${esc(b.readingOrder)}.</span> `:""}${esc(b.title)}</h3><span class="yr">${esc(b.year||"")}</span>
             <div class="m">${rowMeta(b)}</div></article>`;
         }).join("") + `</section>`;
     }).join("");
