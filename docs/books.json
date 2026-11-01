@@ -68,7 +68,10 @@
     "authorSort": "Asher, Neal",
     "publisher": "Cosmos Books",
     "year": "2001",
-    "coverId": "8536680",
+    "isbn": "0-8095-5664-2",
+    "price": "$12.95",
+    "summary": "With most of humanity gone from Earth, Africa has become a lawless wilderness of cults, tribes, deadly leftover technology and revived mammoths. An ancient cyborg known as the Collector, who has preserved humanity's genes at a terrible cost, finds enemies closing in.",
+    "coverId": "594904",
     "added": "2026-10-31"
   },
   {
@@ -285,6 +288,7 @@
     "isbn": "0-312-90305-7",
     "price": "$3.50",
     "format": "Mass-market paperback",
+    "summary": "Stranded by accident in a ruined post-nuclear future, nineteen-year-old Jeremy Towers is among the last fertile men alive, in a world of women farmers and wandering mutants. He becomes a pawn in the struggle over what kind of civilization comes next.",
     "coverId": "6793977",
     "added": "2026-10-31"
   },
@@ -418,6 +422,7 @@
     "isbn": "0-441-14257-5",
     "price": "$2.75",
     "format": "Mass-market paperback",
+    "summary": "World War III has ended, but KRAK-1, an automated nuclear doomsday machine in the deep ocean, is still counting down. Survivors send Demon-4, a war machine wired to a dead soldier's brain, to destroy it, but its awareness keeps growing and it may have other ideas.",
     "coverId": "11425474",
     "added": "2026-10-31"
   },
@@ -1219,12 +1224,16 @@
   },
   {
     "id": "revelation-space-collection-1",
-    "title": "The Revelation Space Collection: Volume I",
+    "title": "The Revelation Space Collection: Volume 1",
     "author": "Alastair Reynolds",
     "authorSort": "Reynolds, Alastair",
     "publisher": "Gollancz",
+    "year": "2025",
     "series": "Revelation Space universe",
+    "isbn": "978-1-3996-1193-0",
+    "price": "$19.99",
     "notes": "Omnibus.",
+    "summary": "The first half of Reynolds's complete Revelation Space short fiction, in story order: Dilation Sleep, A Spy in Europa, Galactic North, Great Wall of Mars, Glacial and Diamond Dogs.",
     "added": "2026-10-31"
   },
   {
@@ -1233,8 +1242,12 @@
     "author": "Alastair Reynolds",
     "authorSort": "Reynolds, Alastair",
     "publisher": "Gollancz",
+    "year": "2025",
     "series": "Revelation Space universe",
+    "isbn": "978-1-3996-1198-5",
+    "price": "$19.99",
     "notes": "Omnibus.",
+    "summary": "The second half of Reynolds's complete Revelation Space short fiction, in story order: Turquoise Days, Weather, Grafenwalder's Bestiary, Nightingale, Monkey Suit, The Last Log of the Lachrimosa, Night Passage, Open and Shut and Plague Music.",
     "added": "2026-10-31"
   },
   {
