@@ -23,6 +23,7 @@ All values are strings. `id`, `title`, `author` and `added` are required.
 | `publisher`, `format` | Imprint, and hardcover or paperback type |
 | `year` | Year first published |
 | `series`, `seriesNo` | Series name and position |
+| `readingGroup`, `readingOrder` | The set of books to read together, and this book's place in it, counting only books in the catalog. Second copies share a number. Books without these don't appear in the Reading order view |
 | `isbn`, `price` | Stored but not shown on the page. The ISBN is searchable |
 | `notes` | Shown on the page. "Hugo" or "Nebula" here shows an award chip instead |
 | `added` | Date catalogued, as `YYYY-MM-DD` |

@@ -21,6 +21,8 @@
     "series": "Night's Dawn",
     "format": "Mass-market paperback",
     "notes": "Story collection set in the Night's Dawn universe.",
+    "readingGroup": "Night's Dawn",
+    "readingOrder": "1",
     "added": "2026-10-31"
   },
   {
@@ -34,6 +36,8 @@
     "seriesNo": "3",
     "price": "$8.50",
     "format": "Mass-market paperback",
+    "readingGroup": "Revelation Space universe",
+    "readingOrder": "4",
     "added": "2026-10-31"
   },
   {
@@ -45,6 +49,8 @@
     "year": "2024",
     "series": "Southern Reach",
     "seriesNo": "4",
+    "readingGroup": "Southern Reach",
+    "readingOrder": "2",
     "added": "2026-10-31"
   },
   {
@@ -100,6 +106,8 @@
     "series": "Southern Reach",
     "format": "Hardcover",
     "notes": "Omnibus: Annihilation, Authority, Acceptance.",
+    "readingGroup": "Southern Reach",
+    "readingOrder": "1",
     "added": "2026-10-31"
   },
   {
@@ -155,6 +163,8 @@
     "year": "2020",
     "series": "Revenger",
     "seriesNo": "3",
+    "readingGroup": "Revenger",
+    "readingOrder": "3",
     "added": "2026-10-31"
   },
   {
@@ -176,6 +186,8 @@
     "year": "2005",
     "series": "Agent Cormac",
     "seriesNo": "3",
+    "readingGroup": "Polity",
+    "readingOrder": "5",
     "added": "2026-10-31"
   },
   {
@@ -220,6 +232,8 @@
     "series": "Revelation Space universe",
     "price": "$8.99",
     "format": "Mass-market paperback",
+    "readingGroup": "Revelation Space universe",
+    "readingOrder": "1",
     "added": "2026-10-31"
   },
   {
@@ -298,6 +312,8 @@
     "series": "Transformation",
     "seriesNo": "1",
     "format": "Hardcover",
+    "readingGroup": "Polity",
+    "readingOrder": "6",
     "added": "2026-10-31"
   },
   {
@@ -381,6 +397,8 @@
     "year": "2018",
     "series": "Prefect Dreyfus",
     "seriesNo": "2",
+    "readingGroup": "Revelation Space universe",
+    "readingOrder": "6",
     "added": "2026-10-31"
   },
   {
@@ -449,6 +467,8 @@
     "series": "Agent Cormac",
     "seriesNo": "1",
     "format": "Mass-market paperback",
+    "readingGroup": "Polity",
+    "readingOrder": "3",
     "added": "2026-10-31"
   },
   {
@@ -483,6 +503,8 @@
     "publisher": "Night Shade Books",
     "year": "2007",
     "series": "Polity",
+    "readingGroup": "Polity",
+    "readingOrder": "14",
     "added": "2026-10-31"
   },
   {
@@ -508,6 +530,8 @@
     "price": "$1.95",
     "format": "Mass-market paperback",
     "notes": "ISBN partly worn on spine; double-check.",
+    "readingGroup": "To the Stars",
+    "readingOrder": "1",
     "added": "2026-10-31"
   },
   {
@@ -532,6 +556,8 @@
     "series": "Jurisdiction",
     "seriesNo": "3",
     "format": "Mass-market paperback",
+    "readingGroup": "Jurisdiction",
+    "readingOrder": "2",
     "added": "2026-10-31"
   },
   {
@@ -565,6 +591,8 @@
     "seriesNo": "3",
     "format": "Paperback",
     "notes": "Second copy (UK Pan edition).",
+    "readingGroup": "Polity",
+    "readingOrder": "8",
     "added": "2026-10-31"
   },
   {
@@ -577,6 +605,8 @@
     "series": "Transformation",
     "seriesNo": "3",
     "format": "Hardcover",
+    "readingGroup": "Polity",
+    "readingOrder": "8",
     "added": "2026-10-31"
   },
   {
@@ -588,6 +618,8 @@
     "year": "2021",
     "series": "Revelation Space",
     "seriesNo": "4",
+    "readingGroup": "Revelation Space universe",
+    "readingOrder": "8",
     "added": "2026-10-31"
   },
   {
@@ -598,6 +630,8 @@
     "publisher": "Tor",
     "year": "2020",
     "series": "Polity",
+    "readingGroup": "Polity",
+    "readingOrder": "13",
     "added": "2026-10-31"
   },
   {
@@ -610,6 +644,8 @@
     "series": "Commonwealth Saga",
     "seriesNo": "2",
     "format": "Mass-market paperback",
+    "readingGroup": "Commonwealth universe",
+    "readingOrder": "2",
     "added": "2026-10-31"
   },
   {
@@ -621,6 +657,8 @@
     "year": "2013",
     "series": "The Owner",
     "seriesNo": "3",
+    "readingGroup": "The Owner",
+    "readingOrder": "3",
     "added": "2026-10-31"
   },
   {
@@ -635,6 +673,8 @@
     "isbn": "0-553-24758-1",
     "price": "$3.99",
     "format": "Mass-market paperback",
+    "readingGroup": "Kilkenny",
+    "readingOrder": "1",
     "added": "2026-10-31"
   },
   {
@@ -667,6 +707,8 @@
     "year": "2024",
     "series": "Prefect Dreyfus",
     "seriesNo": "3",
+    "readingGroup": "Revelation Space universe",
+    "readingOrder": "7",
     "added": "2026-10-31"
   },
   {
@@ -679,6 +721,8 @@
     "series": "MaddAddam",
     "seriesNo": "3",
     "format": "Trade paperback",
+    "readingGroup": "MaddAddam",
+    "readingOrder": "3",
     "added": "2026-10-31"
   },
   {
@@ -705,6 +749,8 @@
     "series": "The Sacketts",
     "seriesNo": "9",
     "format": "Mass-market paperback",
+    "readingGroup": "The Sacketts",
+    "readingOrder": "3",
     "added": "2026-10-31"
   },
   {
@@ -717,6 +763,8 @@
     "series": "The Sacketts",
     "seriesNo": "12",
     "format": "Mass-market paperback",
+    "readingGroup": "The Sacketts",
+    "readingOrder": "4",
     "added": "2026-10-31"
   },
   {
@@ -729,6 +777,8 @@
     "series": "Night's Dawn",
     "seriesNo": "3",
     "format": "Mass-market paperback",
+    "readingGroup": "Night's Dawn",
+    "readingOrder": "6",
     "added": "2026-10-31"
   },
   {
@@ -741,6 +791,8 @@
     "series": "Night's Dawn",
     "seriesNo": "3",
     "format": "Mass-market paperback",
+    "readingGroup": "Night's Dawn",
+    "readingOrder": "7",
     "added": "2026-10-31"
   },
   {
@@ -753,6 +805,8 @@
     "series": "Night's Dawn",
     "seriesNo": "2",
     "format": "Mass-market paperback",
+    "readingGroup": "Night's Dawn",
+    "readingOrder": "4",
     "added": "2026-10-31"
   },
   {
@@ -765,6 +819,8 @@
     "series": "Night's Dawn",
     "seriesNo": "2",
     "format": "Mass-market paperback",
+    "readingGroup": "Night's Dawn",
+    "readingOrder": "5",
     "added": "2026-10-31"
   },
   {
@@ -788,6 +844,8 @@
     "series": "Chronicle of the Fallers",
     "seriesNo": "2",
     "format": "Mass-market paperback",
+    "readingGroup": "Commonwealth universe",
+    "readingOrder": "7",
     "added": "2026-10-31"
   },
   {
@@ -821,6 +879,8 @@
     "year": "2009",
     "series": "Spatterjay",
     "seriesNo": "3",
+    "readingGroup": "Polity",
+    "readingOrder": "12",
     "added": "2026-10-31"
   },
   {
@@ -833,6 +893,8 @@
     "series": "MaddAddam",
     "seriesNo": "1",
     "format": "Trade paperback",
+    "readingGroup": "MaddAddam",
+    "readingOrder": "1",
     "added": "2026-10-31"
   },
   {
@@ -845,6 +907,8 @@
     "series": "Commonwealth Saga",
     "seriesNo": "1",
     "format": "Mass-market paperback",
+    "readingGroup": "Commonwealth universe",
+    "readingOrder": "1",
     "added": "2026-10-31"
   },
   {
@@ -891,6 +955,8 @@
     "publisher": "Night Shade Books",
     "year": "2006",
     "series": "Polity",
+    "readingGroup": "Polity",
+    "readingOrder": "2",
     "added": "2026-10-31"
   },
   {
@@ -903,6 +969,8 @@
     "series": "Jurisdiction",
     "seriesNo": "2",
     "format": "Mass-market paperback",
+    "readingGroup": "Jurisdiction",
+    "readingOrder": "1",
     "added": "2026-10-31"
   },
   {
@@ -926,6 +994,8 @@
     "series": "Night's Dawn",
     "seriesNo": "1",
     "format": "Mass-market paperback",
+    "readingGroup": "Night's Dawn",
+    "readingOrder": "2",
     "added": "2026-10-31"
   },
   {
@@ -938,6 +1008,8 @@
     "series": "Night's Dawn",
     "seriesNo": "1",
     "format": "Mass-market paperback",
+    "readingGroup": "Night's Dawn",
+    "readingOrder": "3",
     "added": "2026-10-31"
   },
   {
@@ -951,6 +1023,8 @@
     "seriesNo": "2",
     "price": "$8.50",
     "format": "Mass-market paperback",
+    "readingGroup": "Revelation Space universe",
+    "readingOrder": "3",
     "added": "2026-10-31"
   },
   {
@@ -994,6 +1068,8 @@
     "seriesNo": "1",
     "price": "$7.99",
     "format": "Mass-market paperback",
+    "readingGroup": "Revelation Space universe",
+    "readingOrder": "2",
     "added": "2026-10-31"
   },
   {
@@ -1005,6 +1081,8 @@
     "year": "2016",
     "series": "Revenger",
     "seriesNo": "1",
+    "readingGroup": "Revenger",
+    "readingOrder": "1",
     "added": "2026-10-31"
   },
   {
@@ -1029,6 +1107,8 @@
     "series": "The Sacketts",
     "seriesNo": "7",
     "format": "Mass-market paperback",
+    "readingGroup": "The Sacketts",
+    "readingOrder": "2",
     "added": "2026-10-31"
   },
   {
@@ -1041,6 +1121,8 @@
     "series": "The Sacketts",
     "seriesNo": "1",
     "format": "Mass-market paperback",
+    "readingGroup": "The Sacketts",
+    "readingOrder": "6",
     "added": "2026-10-31"
   },
   {
@@ -1052,6 +1134,8 @@
     "year": "2019",
     "series": "Salvation Sequence",
     "seriesNo": "2",
+    "readingGroup": "Salvation Sequence",
+    "readingOrder": "2",
     "added": "2026-10-31"
   },
   {
@@ -1063,6 +1147,8 @@
     "year": "2018",
     "series": "Salvation Sequence",
     "seriesNo": "1",
+    "readingGroup": "Salvation Sequence",
+    "readingOrder": "1",
     "added": "2026-10-31"
   },
   {
@@ -1084,6 +1170,8 @@
     "year": "2019",
     "series": "Revenger",
     "seriesNo": "2",
+    "readingGroup": "Revenger",
+    "readingOrder": "2",
     "added": "2026-10-31"
   },
   {
@@ -1124,6 +1212,8 @@
     "isbn": "0-553-14647-5",
     "price": "$2.25",
     "format": "Mass-market paperback",
+    "readingGroup": "To the Stars",
+    "readingOrder": "3",
     "added": "2026-10-31"
   },
   {
@@ -1148,6 +1238,8 @@
     "series": "Chronicle of the Fallers",
     "seriesNo": "1",
     "format": "Mass-market paperback",
+    "readingGroup": "Commonwealth universe",
+    "readingOrder": "6",
     "added": "2026-10-31"
   },
   {
@@ -1181,6 +1273,8 @@
     "year": "2000",
     "series": "Night's Dawn",
     "notes": "Companion guide to the Night's Dawn universe.",
+    "readingGroup": "Night's Dawn",
+    "readingOrder": "8",
     "added": "2026-10-31"
   },
   {
@@ -1217,6 +1311,8 @@
     "series": "The Sacketts",
     "seriesNo": "6",
     "format": "Mass-market paperback",
+    "readingGroup": "The Sacketts",
+    "readingOrder": "1",
     "added": "2026-10-31"
   },
   {
@@ -1228,6 +1324,8 @@
     "year": "2011",
     "series": "The Owner",
     "seriesNo": "1",
+    "readingGroup": "The Owner",
+    "readingOrder": "1",
     "added": "2026-10-31"
   },
   {
@@ -1250,6 +1348,8 @@
     "series": "Void Trilogy",
     "seriesNo": "1",
     "format": "Mass-market paperback",
+    "readingGroup": "Commonwealth universe",
+    "readingOrder": "3",
     "added": "2026-10-31"
   },
   {
@@ -1261,6 +1361,8 @@
     "year": "2006",
     "series": "Polity",
     "notes": "Story collection.",
+    "readingGroup": "Polity",
+    "readingOrder": "15",
     "added": "2026-10-31"
   },
   {
@@ -1273,6 +1375,8 @@
     "series": "Void Trilogy",
     "seriesNo": "3",
     "format": "Mass-market paperback",
+    "readingGroup": "Commonwealth universe",
+    "readingOrder": "5",
     "added": "2026-10-31"
   },
   {
@@ -1362,6 +1466,8 @@
     "series": "Agent Cormac",
     "seriesNo": "2",
     "notes": "Ex-library copy.",
+    "readingGroup": "Polity",
+    "readingOrder": "4",
     "added": "2026-10-31"
   },
   {
@@ -1387,6 +1493,8 @@
     "price": "$8.99",
     "format": "Mass-market paperback",
     "notes": "Later retitled Aurora Rising.",
+    "readingGroup": "Revelation Space universe",
+    "readingOrder": "5",
     "added": "2026-10-31"
   },
   {
@@ -1401,6 +1509,8 @@
     "isbn": "0-553-02735-2",
     "price": "$1.25",
     "format": "Mass-market paperback",
+    "readingGroup": "Kilkenny",
+    "readingOrder": "2",
     "added": "2026-10-31"
   },
   {
@@ -1435,6 +1545,8 @@
     "year": "2020",
     "series": "Salvation Sequence",
     "seriesNo": "3",
+    "readingGroup": "Salvation Sequence",
+    "readingOrder": "3",
     "added": "2026-10-31"
   },
   {
@@ -1457,6 +1569,8 @@
     "seriesNo": "1",
     "format": "Trade paperback",
     "notes": "Second copy.",
+    "readingGroup": "Polity",
+    "readingOrder": "10",
     "added": "2026-10-31"
   },
   {
@@ -1471,6 +1585,8 @@
     "isbn": "0-765-35048-3",
     "price": "$7.99",
     "format": "Mass-market paperback",
+    "readingGroup": "Polity",
+    "readingOrder": "10",
     "added": "2026-10-31"
   },
   {
@@ -1483,6 +1599,8 @@
     "series": "The Sacketts",
     "seriesNo": "17",
     "format": "Mass-market paperback",
+    "readingGroup": "The Sacketts",
+    "readingOrder": "5",
     "added": "2026-10-31"
   },
   {
@@ -1494,6 +1612,8 @@
     "year": "2018",
     "series": "Rise of the Jain",
     "seriesNo": "1",
+    "readingGroup": "Polity",
+    "readingOrder": "9",
     "added": "2026-10-31"
   },
   {
@@ -1506,6 +1626,8 @@
     "series": "Void Trilogy",
     "seriesNo": "2",
     "format": "Mass-market paperback",
+    "readingGroup": "Commonwealth universe",
+    "readingOrder": "4",
     "added": "2026-10-31"
   },
   {
@@ -1528,6 +1650,8 @@
     "year": "2006",
     "series": "Spatterjay",
     "seriesNo": "2",
+    "readingGroup": "Polity",
+    "readingOrder": "11",
     "added": "2026-10-31"
   },
   {
@@ -1560,6 +1684,8 @@
     "series": "MaddAddam",
     "seriesNo": "2",
     "format": "Trade paperback",
+    "readingGroup": "MaddAddam",
+    "readingOrder": "2",
     "added": "2026-10-31"
   },
   {
@@ -1594,6 +1720,8 @@
     "series": "The Sacketts",
     "seriesNo": "2",
     "format": "Mass-market paperback",
+    "readingGroup": "The Sacketts",
+    "readingOrder": "7",
     "added": "2026-10-31"
   },
   {
@@ -1618,6 +1746,8 @@
     "seriesNo": "2",
     "format": "Paperback",
     "notes": "Second copy (paperback).",
+    "readingGroup": "Polity",
+    "readingOrder": "7",
     "added": "2026-10-31"
   },
   {
@@ -1630,6 +1760,8 @@
     "series": "Transformation",
     "seriesNo": "2",
     "format": "Hardcover",
+    "readingGroup": "Polity",
+    "readingOrder": "7",
     "added": "2026-10-31"
   },
   {
@@ -1644,6 +1776,8 @@
     "price": "£9.99",
     "format": "Trade paperback",
     "notes": "Paperback edition published Feb 2023.",
+    "readingGroup": "Polity",
+    "readingOrder": "1",
     "added": "2026-10-31"
   },
   {
@@ -1669,6 +1803,8 @@
     "isbn": "0-553-14339-5",
     "price": "$2.25",
     "format": "Mass-market paperback",
+    "readingGroup": "To the Stars",
+    "readingOrder": "2",
     "added": "2026-10-31"
   },
   {
@@ -1723,6 +1859,8 @@
     "isbn": "978-1-64506-088-8",
     "price": "$24.95",
     "format": "Trade paperback",
+    "readingGroup": "The Owner",
+    "readingOrder": "4",
     "added": "2026-10-31"
   },
   {
@@ -1734,6 +1872,8 @@
     "year": "2012",
     "series": "The Owner",
     "seriesNo": "2",
+    "readingGroup": "The Owner",
+    "readingOrder": "2",
     "added": "2026-10-31"
   }
 ]

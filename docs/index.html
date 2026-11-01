@@ -48,7 +48,8 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
 .seg button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
 @media (max-width:520px){
   .seg span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
-  .seg button{flex:1 1 auto;min-height:40px;padding-inline:4px}
+  .seg button{flex:1 1 auto;min-height:40px;padding-inline:3px;font-size:13.5px}
+  .seg .more{display:none}
 }
 
 .group{margin-top:14px}
@@ -64,6 +65,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
 .row .yr{font-family:var(--f-mono);font-size:12px;color:var(--muted);padding-top:4px;font-variant-numeric:tabular-nums}
 .row .m{grid-column:1/-1;font-size:13.5px;color:var(--muted);margin-top:1px}
 .row .m>span:not(:last-child)::after{content:" · ";color:var(--muted);font-weight:400}
+.step{color:var(--accent)}
 .by{color:var(--fg)}
 .series{color:var(--accent);font-weight:500}
 .award{color:var(--gold);font-weight:600}
@@ -88,6 +90,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
       <button type="button" data-k="series" aria-pressed="false">Series</button>
       <button type="button" data-k="publisher" aria-pressed="false">Publisher</button>
       <button type="button" data-k="decade" aria-pressed="false">Decade</button>
+      <button type="button" data-k="reading" aria-pressed="false">Reading<span class="more"> order</span></button>
     </div>
   </div>
 
@@ -123,6 +126,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
       case "series": return b.series || NO_SERIES;
       case "publisher": return b.publisher || "Unknown publisher";
       case "decade": return decade(b.year);
+      case "reading": return b.readingGroup;
     }
   }
   function cmp(a,b){
@@ -130,6 +134,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
     const bySeries = (a.series||"")===(b.series||"") && a.series ? (Number(a.seriesNo)||0)-(Number(b.seriesNo)||0) : 0;
     if (groupKey==="title") return sortTitle(a.title).localeCompare(sortTitle(b.title));
     if (groupKey==="decade") return (Number(a.year)||9999)-(Number(b.year)||9999) || sa.localeCompare(sb);
+    if (groupKey==="reading") return Number(a.readingOrder)-Number(b.readingOrder) || /second copy/i.test(a.notes||"")-/second copy/i.test(b.notes||"");
     if (groupKey==="series") return (Number(a.seriesNo)||9999)-(Number(b.seriesNo)||9999) || sa.localeCompare(sb) || sortTitle(a.title).localeCompare(sortTitle(b.title));
     return sa.localeCompare(sb) || (a.series||"~").localeCompare(b.series||"~") || bySeries || sortTitle(a.title).localeCompare(sortTitle(b.title));
   }
@@ -141,7 +146,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
     const award = /hugo|nebula/i.test(b.notes||"");
     if (groupKey==="series" && no) meta.push(`<span class="series">${no}</span>`);
     if (groupKey!=="author") meta.push(`<span class="by">${esc(b.author)}</span>`);
-    if (groupKey!=="series" && b.series) meta.push(`<span class="series">${esc(b.series)}${no?" "+no:""}</span>`);
+    if (groupKey!=="series" && b.series && !(groupKey==="reading" && b.series===b.readingGroup)) meta.push(`<span class="series">${esc(b.series)}${no?" "+no:""}</span>`);
     if (award) meta.push(`<span class="award">${esc((b.notes.match(/(Hugo(?: and | & )?Nebula|Hugo|Nebula)[^.;]*/i)||[""])[0].replace(/ winner.*$/i,""))}</span>`);
     if (groupKey!=="publisher" && b.publisher) meta.push(`<span>${esc(b.publisher)}</span>`);
     if (b.format) meta.push(`<span>${esc(b.format.replace(/ paperback$/i,""))}</span>`);
@@ -154,9 +159,9 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
     const authors = new Set(books.map(b => (b.author||"").trim()).filter(Boolean));
     const pubs = new Set(books.map(b => b.publisher).filter(Boolean));
     const q = query.trim().toLowerCase();
-    const shown = books.filter(b => !q || [b.title,b.author,b.series,b.publisher,b.isbn,b.notes].join(" ").toLowerCase().includes(q)).sort(cmp);
+    const shown = books.filter(b => (groupKey!=="reading" || b.readingGroup) && (!q || [b.title,b.author,b.series,b.publisher,b.isbn,b.notes].join(" ").toLowerCase().includes(q))).sort(cmp);
     $("#tally").innerHTML = !books.length ? "No books catalogued yet"
-      : q ? `<b>${shown.length}</b> of ${plural(books.length,"book")}`
+      : q || groupKey==="reading" ? `<b>${shown.length}</b> of ${plural(books.length,"book")}${groupKey==="reading"?" in a reading order":""}`
       : `<b>${books.length}</b> book${books.length===1?"":"s"} · <b>${authors.size}</b> author${authors.size===1?"":"s"} · <b>${pubs.size}</b> imprint${pubs.size===1?"":"s"}`;
     if (!books.length){
       list.innerHTML = `<div class="state"><strong>An empty catalog</strong>No books have been added yet.</div>`;
@@ -168,6 +173,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
     let keys = [...groups.keys()];
     if (groupKey==="publisher") keys.sort((a,b)=>a.localeCompare(b));
     if (groupKey==="series") keys.sort((a,b)=>(a===NO_SERIES)-(b===NO_SERIES) || sortTitle(a).localeCompare(sortTitle(b)));
+    if (groupKey==="reading") keys.sort((a,b)=>sortTitle(a).localeCompare(sortTitle(b)));
     if (groupKey==="decade") keys.sort();
     list.innerHTML = keys.map(k => {
       const items = groups.get(k);
@@ -181,7 +187,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
             sub = `<p class="sub"><span>${esc(authorHead(b))}</span>${n>1?`<span class="count">${n}</span>`:""}</p>`;
           }
           return `${sub}<article class="row">
-            <h3>${esc(b.title)}</h3><span class="yr">${esc(b.year||"")}</span>
+            <h3>${groupKey==="reading"?`<span class="step">${esc(b.readingOrder)}.</span> `:""}${esc(b.title)}</h3><span class="yr">${esc(b.year||"")}</span>
             <div class="m">${rowMeta(b)}</div></article>`;
         }).join("") + `</section>`;
     }).join("");
