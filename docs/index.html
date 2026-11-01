@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Morris Library</title>
 <meta name="description" content="A personal book catalog.">
-<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4f0e6">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#15130f">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%238c2f1f'/%3E%3Cpath fill='%23f4f0e6' d='M8 7h4v18H8zM14 7h4v18h-4zM20.2 7.6l3.8-1 4 17.4-3.8 1z' transform='translate(-1)'/%3E%3C/svg%3E">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#e6edf3">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#101a24">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23101a24'/%3E%3Cpath fill='%23f4a259' d='M8 7h4v18H8zM14 7h4v18h-4zM20.2 7.6l3.8-1 4 17.4-3.8 1z' transform='translate(-1)'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
@@ -15,16 +15,16 @@
 /* Layout: one reading column of two-line catalog rows. The search bar and each group head stay pinned, because the list runs to many screens. */
 :root{
   color-scheme:light;
-  --bg:#f4f0e6; --surface:#fffdf7; --fg:#1c1a16; --muted:#5f594d; --rule:#dcd5c5;
-  --accent:#8c2f1f; --gold:#7d5800;
+  --bg:#e6edf3; --surface:#f5f9fc; --fg:#2a1e17; --muted:#5a4e46; --rule:#c6d2dc;
+  --accent:#ad3a10; --gold:#855600;
   --bar:0px;
   --f-display:"Barlow Condensed","Arial Narrow",Impact,sans-serif;
   --f-body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
   --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
 }
 @media (prefers-color-scheme:dark){:root{
-  --bg:#15130f; --surface:#211e18; --fg:#ece6d8; --muted:#a69e8e; --rule:#3a352c;
-  --accent:#ec9a80; --gold:#e0b650; color-scheme:dark}}
+  --bg:#101a24; --surface:#1a2733; --fg:#f4ead8; --muted:#c2b5a3; --rule:#2d3d4b;
+  --accent:#f4a259; --gold:#f2cc6b; color-scheme:dark}}
 
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.45}
@@ -45,7 +45,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
 .seg>span{color:var(--muted);margin-right:8px;font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
 .seg button{font:500 14px var(--f-body);min-height:36px;background:none;border:0;padding:4px 12px;border-radius:5px;color:var(--muted);cursor:pointer}
 .seg button:hover{color:var(--fg)}
-.seg button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--bg)}
 @media (max-width:520px){
   .seg>span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
   .seg button{flex:1 1 auto;min-height:40px;padding-inline:3px;font-size:13.5px}
@@ -53,7 +53,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
 }
 
 .group{margin-top:14px}
-.ghead{position:sticky;top:var(--bar);z-index:1;display:flex;justify-content:space-between;align-items:baseline;gap:12px;background:var(--bg);border-bottom:2px solid var(--fg);padding-block:8px 3px}
+.ghead{position:sticky;top:var(--bar);z-index:1;display:flex;justify-content:space-between;align-items:baseline;gap:12px;background:var(--bg);border-bottom:2px solid var(--accent);padding-block:8px 3px}
 .ghead h2{font-family:var(--f-display);font-weight:600;font-size:21px;line-height:1.15;margin:0;text-transform:uppercase;letter-spacing:.03em}
 .ghead h2.plain{text-transform:none}
 .ghead h2.author{font-weight:700;font-size:26px;line-height:1.1}
