@@ -42,12 +42,12 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
 .search::placeholder{color:var(--muted);opacity:1}
 .search:focus-visible,.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .seg{display:flex;gap:2px;align-items:center}
-.seg span{color:var(--muted);margin-right:8px;font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+.seg>span{color:var(--muted);margin-right:8px;font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
 .seg button{font:500 14px var(--f-body);min-height:36px;background:none;border:0;padding:4px 12px;border-radius:5px;color:var(--muted);cursor:pointer}
 .seg button:hover{color:var(--fg)}
 .seg button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
 @media (max-width:520px){
-  .seg span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+  .seg>span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
   .seg button{flex:1 1 auto;min-height:40px;padding-inline:3px;font-size:13.5px}
   .seg .more{display:none}
 }
@@ -56,9 +56,8 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
 .ghead{position:sticky;top:var(--bar);z-index:1;display:flex;justify-content:space-between;align-items:baseline;gap:12px;background:var(--bg);border-bottom:2px solid var(--fg);padding-block:8px 3px}
 .ghead h2{font-family:var(--f-display);font-weight:600;font-size:21px;line-height:1.15;margin:0;text-transform:uppercase;letter-spacing:.03em}
 .ghead h2.plain{text-transform:none}
+.ghead h2.author{font-weight:700;font-size:26px;line-height:1.1}
 .count{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
-
-.sub{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:14px 0 0;padding-bottom:3px;border-bottom:1px solid var(--rule);font-weight:600;font-size:14px;color:var(--muted)}
 
 .row{display:grid;grid-template-columns:1fr auto;gap:0 16px;padding:8px 0 9px;border-bottom:1px solid var(--rule)}
 .row h3{font-family:var(--f-display);font-weight:600;font-size:21px;line-height:1.15;margin:0;min-width:0}
@@ -66,7 +65,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
 .row .m{grid-column:1/-1;font-size:13.5px;color:var(--muted);margin-top:1px}
 .row .m>span:not(:last-child)::after{content:" · ";color:var(--muted);font-weight:400}
 .step{color:var(--accent)}
-.by{color:var(--fg)}
+.by{color:var(--fg);font-weight:600;font-size:15px}
 .series{color:var(--accent);font-weight:500}
 .award{color:var(--gold);font-weight:600}
 
@@ -121,7 +120,7 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
 
   function groupOf(b){
     switch(groupKey){
-      case "author": return sortAuthor(b).charAt(0).toUpperCase() || "?";
+      case "author": return authorHead(b) || "?";
       case "title": return sortTitle(b.title).charAt(0).toUpperCase() || "?";
       case "series": return b.series || NO_SERIES;
       case "publisher": return b.publisher || "Unknown publisher";
@@ -177,16 +176,10 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
     if (groupKey==="decade") keys.sort();
     list.innerHTML = keys.map(k => {
       const items = groups.get(k);
-      let prevAuthor = null;
-      return `<section class="group"><div class="ghead"><h2${groupKey==="decade"?' class="plain"':""}>${esc(k)}</h2><span class="count">${items.length}</span></div>` +
+      const headClass = groupKey==="decade" ? ' class="plain"' : groupKey==="author" ? ' class="author"' : "";
+      return `<section class="group"><div class="ghead"><h2${headClass}>${esc(k)}</h2><span class="count">${items.length}</span></div>` +
         items.map(b => {
-          let sub = "";
-          if (groupKey==="author" && b.author!==prevAuthor){
-            prevAuthor = b.author;
-            const n = items.filter(x => x.author===b.author).length;
-            sub = `<p class="sub"><span>${esc(authorHead(b))}</span>${n>1?`<span class="count">${n}</span>`:""}</p>`;
-          }
-          return `${sub}<article class="row">
+          return `<article class="row">
             <h3>${groupKey==="reading"?`<span class="step">${esc(b.readingOrder)}.</span> `:""}${esc(b.title)}</h3><span class="yr">${esc(b.year||"")}</span>
             <div class="m">${rowMeta(b)}</div></article>`;
         }).join("") + `</section>`;
