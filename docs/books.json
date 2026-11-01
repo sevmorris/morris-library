@@ -1,5 +1,30 @@
 [
   {
+    "id": "a-fall-of-moondust",
+    "title": "A Fall of Moondust",
+    "author": "Arthur C. Clarke",
+    "authorSort": "Clarke, Arthur C.",
+    "publisher": "RosettaBooks",
+    "year": "1961",
+    "isbn": "9780795325397",
+    "format": "Ebook",
+    "summary": "A Moon tourist craft sinks beneath a sea of fine dust, and rescuers race to find and save the passengers before the air runs out. A classic of hard science fiction.",
+    "coverId": "2385598",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "a-gift-upon-the-shore",
+    "title": "A Gift Upon the Shore",
+    "author": "M.K. Wren",
+    "authorSort": "Wren, M.K.",
+    "publisher": "Diversion Books",
+    "year": "1990",
+    "format": "Ebook",
+    "summary": "In a world destroyed by nuclear war and plague, two women work to save a library of knowledge for the future, against the threat of a fanatical religious group nearby.",
+    "coverFile": "covers/a-gift-upon-the-shore.jpg",
+    "added": "2026-11-01"
+  },
+  {
     "id": "a-peculiar-peril",
     "title": "A Peculiar Peril",
     "author": "Jeff VanderMeer",
@@ -9,9 +34,22 @@
     "series": "Jonathan Lambshead",
     "seriesNo": "1",
     "format": "Hardcover",
-    "coverId": "10520614",
     "summary": "Young Jonathan Lambshead inherits his grandfather's sprawling, cluttered mansion and finds a doorway to a warped alternate Europe, where an occult war threatens both worlds.",
+    "coverId": "10520614",
     "added": "2026-10-31"
+  },
+  {
+    "id": "a-scanner-darkly",
+    "title": "A Scanner Darkly",
+    "author": "Philip K. Dick",
+    "authorSort": "Dick, Philip K.",
+    "publisher": "Mariner Books",
+    "year": "1977",
+    "isbn": "9780547572178",
+    "format": "Ebook",
+    "summary": "Bob Arctor is an undercover narcotics agent who's assigned to spy on himself as a devastating drug destroys his mind. Dick's bleak, personal novel of addiction in a near-future America.",
+    "coverId": "9251958",
+    "added": "2026-11-01"
   },
   {
     "id": "a-second-chance-at-eden",
@@ -21,13 +59,28 @@
     "publisher": "Aspect",
     "year": "1998",
     "series": "Night's Dawn",
-    "format": "Mass-market paperback",
-    "notes": "Story collection set in the Night's Dawn universe.",
     "readingGroup": "Night's Dawn",
     "readingOrder": "1",
-    "coverId": "287006",
+    "format": "Mass-market paperback",
+    "notes": "Story collection set in the Night's Dawn universe.",
     "summary": "Seven stories tracing the early history of the Confederation, the setting of the Night's Dawn trilogy, from the first bitek habitat onward.",
+    "coverId": "287006",
     "added": "2026-10-31"
+  },
+  {
+    "id": "abaddons-gate",
+    "title": "Abaddon's Gate",
+    "author": "James S. A. Corey",
+    "authorSort": "Corey, James S. A.",
+    "publisher": "Orbit",
+    "year": "2013",
+    "series": "The Expanse",
+    "seriesNo": "3",
+    "isbn": "9780316235426",
+    "format": "Ebook",
+    "summary": "An alien gate opens at the edge of the solar system, and everyone wants what's on the other side. James Holden, blamed for its dangers, is drawn into a mission to pass through it. Third in The Expanse.",
+    "coverId": "15248733",
+    "added": "2026-11-01"
   },
   {
     "id": "absolution-gap",
@@ -38,12 +91,12 @@
     "year": "2003",
     "series": "Revelation Space",
     "seriesNo": "3",
-    "price": "$8.50",
-    "format": "Mass-market paperback",
     "readingGroup": "Revelation Space universe",
     "readingOrder": "4",
-    "coverId": "284155",
+    "price": "$8.50",
+    "format": "Mass-market paperback",
     "summary": "As the Inhibitor machines close in, Clavain's battered refugees receive an unexpected and dangerous arrival, while on a far world a moving cathedral hides a secret tied to a vanishing gas giant. The original Inhibitor trilogy ends here.",
+    "coverId": "284155",
     "added": "2026-10-31"
   },
   {
@@ -57,8 +110,8 @@
     "seriesNo": "4",
     "readingGroup": "Southern Reach",
     "readingOrder": "2",
-    "coverId": "15174269",
     "summary": "A return to Area X decades after the trilogy, digging into the earliest and strangest expeditions, and into what the Southern Reach chose to bury.",
+    "coverId": "15174269",
     "added": "2026-10-31"
   },
   {
@@ -75,6 +128,31 @@
     "added": "2026-10-31"
   },
   {
+    "id": "after-london-or-wild-england",
+    "title": "After London; or, Wild England",
+    "author": "Richard Jefferies",
+    "authorSort": "Jefferies, Richard",
+    "publisher": "Project Gutenberg",
+    "year": "1885",
+    "format": "Ebook",
+    "summary": "After an unexplained catastrophe, England has gone back to forest and London lies under a poisonous swamp. In this new dark age, a young nobleman sets out across a vast inland lake. An 1885 forerunner of the genre.",
+    "coverId": "11262055",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "against-the-fall-of-night",
+    "title": "Against the Fall of Night",
+    "author": "Arthur C. Clarke",
+    "authorSort": "Clarke, Arthur C.",
+    "publisher": "RosettaBooks",
+    "year": "1953",
+    "isbn": "9780795324925",
+    "format": "Ebook",
+    "summary": "Alvin, the last child born in the ancient city of Diaspar, refuses to believe the world outside was destroyed. Clarke's first novel, which he later rewrote as The City and the Stars.",
+    "coverId": "5541403",
+    "added": "2026-11-01"
+  },
+  {
     "id": "alas-babylon",
     "title": "Alas, Babylon",
     "author": "Pat Frank",
@@ -84,8 +162,8 @@
     "price": "$1.50",
     "format": "Mass-market paperback",
     "notes": "Bantam no. 02741 on spine.",
-    "coverId": "2540438",
     "summary": "A nuclear war spares one small Florida town, and its people must relearn how to live without power, money or law. A founding classic of survival fiction.",
+    "coverId": "2540438",
     "added": "2026-10-31"
   },
   {
@@ -97,8 +175,8 @@
     "series": "Ambergris",
     "format": "Hardcover",
     "notes": "Omnibus: City of Saints and Madmen, Shriek: An Afterword, Finch.",
-    "coverId": "13465765",
     "summary": "One volume gathering VanderMeer's three books about Ambergris, a decaying city haunted by the fungal gray caps who lived beneath it first.",
+    "coverId": "13465765",
     "added": "2026-10-31"
   },
   {
@@ -110,8 +188,8 @@
     "year": "1994",
     "price": "$6.99",
     "format": "Mass-market paperback",
-    "coverId": "10095127",
     "summary": "A limited nuclear exchange between the United States and Russia turns into a global conventional war, followed through generals, politicians, soldiers and civilians.",
+    "coverId": "10095127",
     "added": "2026-10-31"
   },
   {
@@ -122,12 +200,12 @@
     "publisher": "FSG",
     "year": "2014",
     "series": "Southern Reach",
-    "format": "Hardcover",
-    "notes": "Omnibus: Annihilation, Authority, Acceptance.",
     "readingGroup": "Southern Reach",
     "readingOrder": "1",
-    "coverId": "8408648",
+    "format": "Hardcover",
+    "notes": "Omnibus: Annihilation, Authority, Acceptance.",
     "summary": "All three Southern Reach novels in one book. Expedition after expedition enters Area X, a stretch of coast reclaimed by something unknowable, while the secret agency studying it comes apart.",
+    "coverId": "8408648",
     "added": "2026-10-31"
   },
   {
@@ -140,8 +218,33 @@
     "isbn": "0-449-24429-6",
     "price": "$3.50",
     "format": "Mass-market paperback",
-    "coverId": "6383393",
     "summary": "Threats of sabotage against Alaska's oil pipeline and Canada's tar sands bring in two veteran oil-field troubleshooters, who must find the enemy in a frozen wilderness.",
+    "coverId": "6383393",
+    "added": "2026-10-31"
+  },
+  {
+    "id": "babel-17",
+    "title": "Babel-17",
+    "author": "Samuel R. Delany",
+    "authorSort": "Delany, Samuel R.",
+    "publisher": "Open Road Media",
+    "year": "1966",
+    "isbn": "9781480461840",
+    "format": "Ebook",
+    "summary": "Poet Rydra Wong is hired to crack Babel-17, an enemy code that turns out to be a language capable of changing the way its speakers think. Winner of the Nebula Award.",
+    "coverId": "8729208",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "bear-island",
+    "title": "Bear Island",
+    "author": "Alistair MacLean",
+    "authorSort": "MacLean, Alistair",
+    "publisher": "Fontana",
+    "year": "1971",
+    "format": "Mass-market paperback",
+    "summary": "A film crew sails for a desolate island north of the Arctic Circle, and its members start dying on the way. The ship's doctor has to work out why they were really brought there.",
+    "coverId": "9542094",
     "added": "2026-10-31"
   },
   {
@@ -154,20 +257,8 @@
     "price": "$1.25",
     "format": "Mass-market paperback",
     "notes": "Second copy. Fawcett no. 01766 on spine.",
-    "coverId": "9542094",
     "summary": "A film crew sails for a desolate island north of the Arctic Circle, and its members start dying on the way. The ship's doctor has to work out why they were really brought there.",
-    "added": "2026-10-31"
-  },
-  {
-    "id": "bear-island",
-    "title": "Bear Island",
-    "author": "Alistair MacLean",
-    "authorSort": "MacLean, Alistair",
-    "publisher": "Fontana",
-    "year": "1971",
-    "format": "Mass-market paperback",
     "coverId": "9542094",
-    "summary": "A film crew sails for a desolate island north of the Arctic Circle, and its members start dying on the way. The ship's doctor has to work out why they were really brought there.",
     "added": "2026-10-31"
   },
   {
@@ -178,8 +269,8 @@
     "publisher": "Bantam",
     "year": "1979",
     "format": "Mass-market paperback",
-    "coverId": "368778",
     "summary": "A young man helps found a town in the Wyoming wilderness, and grows up through hard winters, gunfights and a journey east in one of L'Amour's longest frontier novels.",
+    "coverId": "368778",
     "added": "2026-10-31"
   },
   {
@@ -193,8 +284,8 @@
     "seriesNo": "3",
     "readingGroup": "Revenger",
     "readingOrder": "3",
-    "coverId": "10528131",
     "summary": "Sisters Adrana and Fura Ness, now the most wanted pirates in the Congregation, chase the truth about the worlds' repeated collapses. The Revenger trilogy ends here.",
+    "coverId": "10528131",
     "added": "2026-10-31"
   },
   {
@@ -205,8 +296,8 @@
     "publisher": "MCD / FSG",
     "year": "2017",
     "format": "Hardcover",
-    "coverId": "8044631",
     "summary": "In a ruined city stalked by a giant flying bear, the scavenger Rachel finds a small shapeless creature and raises it, forcing her to ask what it is and what her lover is hiding.",
+    "coverId": "8044631",
     "added": "2026-10-31"
   },
   {
@@ -220,8 +311,8 @@
     "seriesNo": "3",
     "readingGroup": "Polity",
     "readingOrder": "5",
-    "coverId": "524772",
     "summary": "Agent Cormac learns his old enemy Skellor has survived and is pursuing him across star systems. Meanwhile the murderous golem Mr Crane is rebuilt, and the alien Dragon has plans of its own.",
+    "coverId": "524772",
     "added": "2026-10-31"
   },
   {
@@ -233,8 +324,8 @@
     "year": "1968",
     "price": "$3.50",
     "format": "Mass-market paperback",
-    "coverId": "5298687",
     "summary": "After killers destroy his home and family, Major James Brionne heads west with his young son to start again, but the men who wronged him aren't finished.",
+    "coverId": "5298687",
     "added": "2026-10-31"
   },
   {
@@ -245,9 +336,22 @@
     "publisher": "Doubleday",
     "year": "1970",
     "format": "Hardcover",
-    "coverId": "15228155",
     "summary": "Gypsy pilgrims gather in Provence, and a string of suspicious deaths follows. A mysterious Englishman and a young woman he has drawn in uncover a far bigger plot.",
+    "coverId": "15228155",
     "added": "2026-10-31"
+  },
+  {
+    "id": "cats-cradle",
+    "title": "Cat's Cradle",
+    "author": "Kurt Vonnegut",
+    "authorSort": "Vonnegut, Kurt",
+    "publisher": "RosettaBooks",
+    "year": "1963",
+    "isbn": "9780795311963",
+    "format": "Ebook",
+    "summary": "A writer researching the atomic bomb's creator is drawn to a Caribbean island, a made-up religion and ice-nine, a substance that could freeze the world's water. Vonnegut's dark comedy about the end of everything.",
+    "coverId": "12709654",
+    "added": "2026-11-01"
   },
   {
     "id": "century-rain",
@@ -258,8 +362,8 @@
     "year": "2004",
     "price": "$8.99",
     "format": "Mass-market paperback",
-    "coverId": "284263",
     "summary": "A far-future archaeologist from a ruined Earth passes through a wormhole into a preserved 1950s Paris, where she joins forces with an American detective to stop a deadly plot.",
+    "coverId": "284263",
     "added": "2026-10-31"
   },
   {
@@ -270,12 +374,12 @@
     "publisher": "Ace",
     "year": "2001",
     "series": "Revelation Space universe",
-    "price": "$8.99",
-    "format": "Mass-market paperback",
     "readingGroup": "Revelation Space universe",
     "readingOrder": "1",
-    "coverId": "380118",
+    "price": "$8.99",
+    "format": "Mass-market paperback",
     "summary": "Tanner Mirabel tracks a killer to Chasm City, once a utopia and now a plague-rotted gothic slum, while his own memories start to deceive him.",
+    "coverId": "380118",
     "added": "2026-10-31"
   },
   {
@@ -293,6 +397,21 @@
     "added": "2026-10-31"
   },
   {
+    "id": "cibola-burn",
+    "title": "Cibola Burn",
+    "author": "James S. A. Corey",
+    "authorSort": "Corey, James S. A.",
+    "publisher": "Orbit",
+    "year": "2014",
+    "series": "The Expanse",
+    "seriesNo": "4",
+    "isbn": "9780316217606",
+    "format": "Ebook",
+    "summary": "The gates have opened a thousand new worlds. On the first colony, settlers and a corporate survey team fight over the planet, and James Holden is sent to keep the peace. Fourth in The Expanse.",
+    "coverId": "15248832",
+    "added": "2026-11-01"
+  },
+  {
     "id": "circus",
     "title": "Circus",
     "author": "Alistair MacLean",
@@ -300,8 +419,8 @@
     "publisher": "Doubleday",
     "year": "1975",
     "format": "Hardcover",
-    "coverId": "14591087",
     "summary": "The CIA recruits a famous trapeze act and fellow circus performers for an impossible job: breaking into an Eastern Bloc fortress on tour to steal a weapons secret.",
+    "coverId": "14591087",
     "added": "2026-10-31"
   },
   {
@@ -314,8 +433,8 @@
     "isbn": "0-553-27561-5",
     "price": "$4.50",
     "format": "Mass-market paperback",
-    "coverId": "6601992",
     "summary": "Val Trevallion comes to the Nevada silver boom to find the men who murdered his parents, and is caught up in the fortunes of Virginia City and a talented young actress.",
+    "coverId": "6601992",
     "added": "2026-10-31"
   },
   {
@@ -328,8 +447,8 @@
     "isbn": "0-765-35270-6",
     "price": "$7.99",
     "format": "Mass-market paperback",
-    "coverId": "8669017",
     "summary": "Two people from different eras are hurled back through time in a war between far-future human factions, hunted by Cowl, a monstrous being determined to rewrite history from its beginnings.",
+    "coverId": "8669017",
     "added": "2026-10-31"
   },
   {
@@ -340,8 +459,8 @@
     "publisher": "Bantam",
     "year": "1954",
     "format": "Mass-market paperback",
-    "coverId": "369054",
     "summary": "Rafe Caradec promises a dying man he will protect his daughter's Wyoming ranch, and arrives to find a schemer closing in on both the land and the woman.",
+    "coverId": "369054",
     "added": "2026-10-31"
   },
   {
@@ -352,8 +471,8 @@
     "publisher": "Bantam",
     "year": "1963",
     "format": "Mass-market paperback",
-    "coverId": "368690",
     "summary": "Gaylord Riley leaves an outlaw gang to build an honest life, but false accusations of rustling and murder bring the past back. Help comes from the friends he left behind.",
+    "coverId": "368690",
     "added": "2026-10-31"
   },
   {
@@ -365,12 +484,24 @@
     "year": "2015",
     "series": "Transformation",
     "seriesNo": "1",
-    "format": "Hardcover",
     "readingGroup": "Polity",
-    "readingOrder": "6",
-    "coverId": "10266988",
+    "readingOrder": "9",
+    "format": "Hardcover",
     "summary": "Thorvald Spear wakes a century after being killed by a rogue AI and swears revenge. His hunt for Penny Royal draws in a crime boss turning into something less than human.",
+    "coverId": "10266988",
     "added": "2026-10-31"
+  },
+  {
+    "id": "darkness-and-dawn",
+    "title": "Darkness and Dawn",
+    "author": "George Allan England",
+    "authorSort": "England, George Allan",
+    "publisher": "Project Gutenberg",
+    "year": "1914",
+    "format": "Ebook",
+    "summary": "A man and a woman wake in a ruined Manhattan skyscraper after fifteen hundred years of suspended animation, and find civilization gone. An early classic of the post-apocalyptic genre, in three parts.",
+    "coverId": "1755661",
+    "added": "2026-11-01"
   },
   {
     "id": "darkness-at-noon",
@@ -380,8 +511,8 @@
     "year": "1940",
     "format": "Mass-market paperback",
     "notes": "Spine code CP 279.",
-    "coverId": "9888142",
     "summary": "Rubashov, an old revolutionary, is jailed and interrogated by the regime he helped to build. A devastating novel of Stalin's purges and the logic that drives a man to confess.",
+    "coverId": "9888142",
     "added": "2026-10-31"
   },
   {
@@ -395,8 +526,8 @@
     "isbn": "0-87997-447-8",
     "price": "$1.50",
     "format": "Mass-market paperback",
-    "coverId": "6485220",
     "summary": "A colony ship from Earth crash-lands on a harsh red-sunned planet, and the stranded survivors clash over whether to fight for rescue or adapt. The founding story of the Darkover series.",
+    "coverId": "6485220",
     "added": "2026-10-31"
   },
   {
@@ -409,8 +540,8 @@
     "isbn": "0-440-91740-9",
     "price": "$3.50",
     "format": "Mass-market paperback",
-    "coverId": "9302226",
     "summary": "A college student guiding a hunter in the desert refuses to cover up a killing, and is stripped of everything and left to die. He must survive the desert while being hunted.",
+    "coverId": "9302226",
     "added": "2026-10-31"
   },
   {
@@ -438,8 +569,8 @@
     "price": "$6.99",
     "format": "Mass-market paperback",
     "notes": "Hugo and Nebula winner.",
-    "coverId": "369478",
     "summary": "A young Oxford historian travels back to the Middle Ages, but a mistake strands her in a village during the Black Death, while an epidemic strikes her own time.",
+    "coverId": "369478",
     "added": "2026-10-31"
   },
   {
@@ -452,9 +583,37 @@
     "isbn": "0-449-23252-2",
     "price": "$2.75",
     "format": "Mass-market paperback",
-    "coverId": "8310472",
     "summary": "A plague nearly wipes out humanity, and geologist Isherwood Williams survives to watch a small new community grow while civilization's knowledge slips away over a lifetime.",
+    "coverId": "8310472",
     "added": "2026-10-31"
+  },
+  {
+    "id": "earthfall",
+    "title": "Earthfall",
+    "author": "Stephen Knight",
+    "authorSort": "Knight, Stephen",
+    "publisher": "Ronin LLC",
+    "year": "2013",
+    "series": "Earthfall",
+    "seriesNo": "1",
+    "isbn": "9780984805358",
+    "format": "Ebook",
+    "summary": "Humanity barely survived the Sixty Minute War. In the last outpost of the United States, survivors are drawn into a desperate fight for what remains.",
+    "coverFile": "covers/earthfall.jpg",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "earthlight",
+    "title": "Earthlight",
+    "author": "Arthur C. Clarke",
+    "authorSort": "Clarke, Arthur C.",
+    "publisher": "RosettaBooks",
+    "year": "1955",
+    "isbn": "9780795325168",
+    "format": "Ebook",
+    "summary": "Two centuries from now, a secret agent from Earth arrives at a Moon observatory to find a spy, as tension between Earth and its colonies moves toward open war.",
+    "coverId": "3742918",
+    "added": "2026-11-01"
   },
   {
     "id": "elysium-fire",
@@ -467,8 +626,8 @@
     "seriesNo": "2",
     "readingGroup": "Revelation Space universe",
     "readingOrder": "6",
-    "coverId": "11087255",
     "summary": "Prefect Tom Dreyfus investigates sudden, random deaths across the Glitter Band, as a charismatic figure persuades habitats to break away from its near-perfect democracy.",
+    "coverId": "11087255",
     "added": "2026-10-31"
   },
   {
@@ -478,9 +637,52 @@
     "authorSort": "Reynolds, Alastair",
     "publisher": "Orbit",
     "year": "2022",
-    "coverId": "13213939",
     "summary": "Doctor Silas Coade sails on an expedition to a mysterious artefact, first in the age of sail, then steam, then beyond. Each time disaster strikes, and only he begins to notice.",
+    "coverId": "13213939",
     "added": "2026-10-31"
+  },
+  {
+    "id": "exodus",
+    "title": "Exodus",
+    "author": "Paul Antony Jones",
+    "authorSort": "Jones, Paul Antony",
+    "publisher": "47North",
+    "year": "2013",
+    "series": "Extinction Point",
+    "seriesNo": "2",
+    "isbn": "9781477805060",
+    "format": "Ebook",
+    "summary": "Emily Baxter survived the red rain, but the dead are now turning into something alien. She continues her journey across a transformed America toward the voice of another survivor.",
+    "coverId": "7864703",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "extinction-point",
+    "title": "Extinction Point",
+    "author": "Paul Antony Jones",
+    "authorSort": "Jones, Paul Antony",
+    "publisher": "47North",
+    "year": "2012",
+    "series": "Extinction Point",
+    "seriesNo": "1",
+    "isbn": "9781611097993",
+    "format": "Ebook",
+    "summary": "After a mysterious red rain kills nearly everything on Earth, reporter Emily Baxter sets out from New York to find any survivors, as something new begins to grow in the ruins.",
+    "coverId": "8565015",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "eye-in-the-sky",
+    "title": "Eye in the Sky",
+    "author": "Philip K. Dick",
+    "authorSort": "Dick, Philip K.",
+    "publisher": "Mariner Books",
+    "year": "1957",
+    "isbn": "9780547572543",
+    "format": "Ebook",
+    "summary": "An accident at a particle accelerator throws eight people into a string of warped realities, each shaped by the beliefs and fears of a different member of the group.",
+    "coverId": "9251766",
+    "added": "2026-11-01"
   },
   {
     "id": "falling-free",
@@ -494,8 +696,8 @@
     "price": "$3.50",
     "format": "Mass-market paperback",
     "notes": "Nebula winner.",
-    "coverId": "12393801",
     "summary": "Engineer Leo Graf is sent to teach the quaddies, children bioengineered with four arms for life in free fall, and rebels when their corporate owners decide they're obsolete. A prequel to the Vorkosigan Saga.",
+    "coverId": "12393801",
     "added": "2026-10-31"
   },
   {
@@ -507,9 +709,22 @@
     "year": "1963",
     "price": "$1.95",
     "format": "Mass-market paperback",
-    "coverId": "4986473",
     "summary": "Con man Macon Fallon plans to fleece a party of settlers by passing off a ghost town as a gold strike, then finds a real community forming around him, and that he cares what happens to it.",
+    "coverId": "4986473",
     "added": "2026-10-31"
+  },
+  {
+    "id": "flight-from-rebirth",
+    "title": "Flight from Rebirth",
+    "author": "J. T. McIntosh",
+    "authorSort": "McIntosh, J. T.",
+    "publisher": "Prologue Books",
+    "year": "1971",
+    "isbn": "9781440559532",
+    "format": "Ebook",
+    "summary": "In a world where a select few get eternal life through the Rebirth Institute, Benny Rice has spent twenty years hiding from a system he has reason to fear.",
+    "coverFile": "covers/flight-from-rebirth.jpg",
+    "added": "2026-11-01"
   },
   {
     "id": "forever-peace",
@@ -521,9 +736,23 @@
     "price": "$6.99",
     "format": "Mass-market paperback",
     "notes": "Hugo and Nebula winner.",
-    "coverId": "283721",
     "summary": "Julian Class fights a war by remote-controlled robot, linked mind to mind with his platoon, and discovers both a physics experiment that could end the universe and a possible way to end war.",
+    "coverId": "283721",
     "added": "2026-10-31"
+  },
+  {
+    "id": "fortunes-rising",
+    "title": "Fortune's Rising",
+    "author": "Sara King",
+    "authorSort": "King, Sara",
+    "publisher": "Parasite Publications",
+    "year": "2012",
+    "series": "Outer Bounds",
+    "seriesNo": "1",
+    "format": "Ebook",
+    "summary": "Fortune, on a planet settled by humanity's only surviving colony ship, is hiding a secret that makes her very valuable, in an adventure among the outer worlds.",
+    "coverId": "8536526",
+    "added": "2026-11-01"
   },
   {
     "id": "galactic-dreams",
@@ -536,8 +765,8 @@
     "price": "$4.99",
     "format": "Mass-market paperback",
     "notes": "Story collection. Includes a new Bill, the Galactic Hero story.",
-    "coverId": "10725744",
     "summary": "A wide-ranging collection of Harrison's short stories, including a new adventure for his hapless space trooper Bill, the Galactic Hero.",
+    "coverId": "10725744",
     "added": "2026-10-31"
   },
   {
@@ -548,8 +777,8 @@
     "publisher": "Del Rey",
     "year": "2012",
     "format": "Mass-market paperback",
-    "coverId": "7260146",
     "summary": "In 2143 Newcastle, a murder victim turns out to be a member of the powerful North clone family, reviving a decades-old massacre case. A hunt for the alien killer begins on a far planet.",
+    "coverId": "7260146",
     "added": "2026-10-31"
   },
   {
@@ -561,11 +790,11 @@
     "year": "2001",
     "series": "Agent Cormac",
     "seriesNo": "1",
-    "format": "Mass-market paperback",
     "readingGroup": "Polity",
     "readingOrder": "3",
-    "coverId": "524262",
+    "format": "Mass-market paperback",
     "summary": "Agent Ian Cormac, forced to give up the direct link to the AI network that he has worn for decades, investigates a disaster on the world of Samarkand. A crazed killer and a giant alien are on his trail.",
+    "coverId": "524262",
     "added": "2026-10-31"
   },
   {
@@ -578,8 +807,8 @@
     "isbn": "0-553-24765-4",
     "price": "$2.95",
     "format": "Mass-market paperback",
-    "coverId": "368640",
     "summary": "Rancher Clay Bell fights to save the timbered hills above his valley from loggers who need the wood and have the town's backing, while a storm of violence builds.",
+    "coverId": "368640",
     "added": "2026-10-31"
   },
   {
@@ -592,8 +821,8 @@
     "isbn": "0-553-24762-X",
     "price": "$3.50",
     "format": "Mass-market paperback",
-    "coverId": "368637",
     "summary": "Drifter Barnabas Pike and Black prizefighter Eddie Holt take a remote winter line-shack job in Montana, and get drawn into a fight to defend homesteaders who have been burned out.",
+    "coverId": "368637",
     "added": "2026-10-31"
   },
   {
@@ -605,9 +834,9 @@
     "year": "2007",
     "series": "Polity",
     "readingGroup": "Polity",
-    "readingOrder": "14",
-    "coverId": "1751145",
+    "readingOrder": "17",
     "summary": "Decades after a war between two rival planets ended with the destruction of a mysterious object, four strange siblings born from that event begin to unravel what really happened.",
+    "coverId": "1751145",
     "added": "2026-10-31"
   },
   {
@@ -618,8 +847,8 @@
     "publisher": "Doubleday",
     "year": "1955",
     "format": "Hardcover",
-    "coverId": "11645475",
     "summary": "A worn-out British cruiser and its exhausted crew escort an Arctic convoy to Murmansk in World War II, facing U-boats, bombers and brutal cold. MacLean's first novel.",
+    "coverId": "11645475",
     "added": "2026-10-31"
   },
   {
@@ -631,14 +860,14 @@
     "year": "1980",
     "series": "To the Stars",
     "seriesNo": "1",
+    "readingGroup": "To the Stars",
+    "readingOrder": "1",
     "isbn": "0-553-13917-7",
     "price": "$1.95",
     "format": "Mass-market paperback",
     "notes": "ISBN partly worn on spine; double-check.",
-    "readingGroup": "To the Stars",
-    "readingOrder": "1",
-    "coverId": "9828781",
     "summary": "Jan Kulozik, a privileged engineer on a future Earth, discovers the lies holding up his society and pays dearly for it when he helps the people it oppresses. First of the To the Stars trilogy.",
+    "coverId": "9828781",
     "added": "2026-10-31"
   },
   {
@@ -651,8 +880,8 @@
     "price": "$0.95",
     "format": "Mass-market paperback",
     "notes": "Fawcett no. 03059 on spine.",
-    "coverId": "467868",
     "summary": "Army scout Hondo Lane comes across a woman and her son alone on an Arizona ranch, as the Apache prepare to rise. L'Amour's first novel under his own name.",
+    "coverId": "467868",
     "added": "2026-10-31"
   },
   {
@@ -664,11 +893,11 @@
     "year": "1999",
     "series": "Jurisdiction",
     "seriesNo": "3",
-    "format": "Mass-market paperback",
     "readingGroup": "Jurisdiction",
     "readingOrder": "2",
-    "coverId": "236830",
+    "format": "Mass-market paperback",
     "summary": "Andrej Koscuisko, a surgeon forced to serve as the Fleet's torturer, returns for another round against the system that made him and for the bonded men who depend on him.",
+    "coverId": "236830",
     "added": "2026-10-31"
   },
   {
@@ -680,8 +909,8 @@
     "year": "2008",
     "price": "$8.99",
     "format": "Mass-market paperback",
-    "coverId": "5732007",
     "summary": "Six million years after one woman split herself into a thousand clones to roam the galaxy, two of them arrive late to a reunion and find someone is wiping out their line.",
+    "coverId": "5732007",
     "added": "2026-10-31"
   },
   {
@@ -691,25 +920,8 @@
     "authorSort": "Ellison, Harlan",
     "year": "1967",
     "notes": "Story collection.",
-    "coverId": "5540875",
     "summary": "Ellison's fierce short story collection. In the title story, a vengeful supercomputer has destroyed humanity except for five survivors, whom it keeps alive to torment forever.",
-    "added": "2026-10-31"
-  },
-  {
-    "id": "infinity-engine-pan",
-    "title": "Infinity Engine",
-    "author": "Neal Asher",
-    "authorSort": "Asher, Neal",
-    "publisher": "Pan",
-    "year": "2017",
-    "series": "Transformation",
-    "seriesNo": "3",
-    "format": "Paperback",
-    "notes": "Second copy (UK Pan edition).",
-    "readingGroup": "Polity",
-    "readingOrder": "8",
-    "coverId": "8275333",
-    "summary": "The rogue AI Penny Royal is pursued by those seeking revenge and redemption, while the swarm-robot killer known as the Brockle grows more dangerous. The Transformation trilogy ends here.",
+    "coverId": "5540875",
     "added": "2026-10-31"
   },
   {
@@ -721,11 +933,28 @@
     "year": "2017",
     "series": "Transformation",
     "seriesNo": "3",
-    "format": "Hardcover",
     "readingGroup": "Polity",
-    "readingOrder": "8",
-    "coverId": "8275333",
+    "readingOrder": "11",
+    "format": "Hardcover",
     "summary": "The rogue AI Penny Royal is pursued by those seeking revenge and redemption, while the swarm-robot killer known as the Brockle grows more dangerous. The Transformation trilogy ends here.",
+    "coverId": "8275333",
+    "added": "2026-10-31"
+  },
+  {
+    "id": "infinity-engine-pan",
+    "title": "Infinity Engine",
+    "author": "Neal Asher",
+    "authorSort": "Asher, Neal",
+    "publisher": "Pan",
+    "year": "2017",
+    "series": "Transformation",
+    "seriesNo": "3",
+    "readingGroup": "Polity",
+    "readingOrder": "11",
+    "format": "Paperback",
+    "notes": "Second copy (UK Pan edition).",
+    "summary": "The rogue AI Penny Royal is pursued by those seeking revenge and redemption, while the swarm-robot killer known as the Brockle grows more dangerous. The Transformation trilogy ends here.",
+    "coverId": "8275333",
     "added": "2026-10-31"
   },
   {
@@ -739,8 +968,8 @@
     "seriesNo": "4",
     "readingGroup": "Revelation Space universe",
     "readingOrder": "8",
-    "coverId": "12724150",
     "summary": "Miguel de Ruyter has hidden his people from the Inhibitors for forty years. A mission to protect them sends him out into the open, and forces him to face who he really is.",
+    "coverId": "12724150",
     "added": "2026-10-31"
   },
   {
@@ -752,9 +981,9 @@
     "year": "2020",
     "series": "Polity",
     "readingGroup": "Polity",
-    "readingOrder": "13",
-    "coverId": "11543841",
+    "readingOrder": "16",
     "summary": "Jack is one of twenty clones sold to the prador king as living stock, but he has knowledge no clone should have. He must escape as a viral experiment rampages through the ship.",
+    "coverId": "11543841",
     "added": "2026-10-31"
   },
   {
@@ -766,11 +995,11 @@
     "year": "2005",
     "series": "Commonwealth Saga",
     "seriesNo": "2",
-    "format": "Mass-market paperback",
     "readingGroup": "Commonwealth universe",
     "readingOrder": "2",
-    "coverId": "211015",
+    "format": "Mass-market paperback",
     "summary": "The Commonwealth reels from war with an alien empire, while a lone investigator and a band of rebels hunt the traitor they believe is secretly steering humanity to its doom. Concludes Pandora's Star.",
+    "coverId": "211015",
     "added": "2026-10-31"
   },
   {
@@ -784,8 +1013,8 @@
     "seriesNo": "3",
     "readingGroup": "The Owner",
     "readingOrder": "3",
-    "coverId": "10085380",
     "summary": "Alan Saul and his space station flee to Jupiter from the vicious new ruler of Earth, Serene Galahad, as the two sides move toward a final confrontation. Ends the original Owner trilogy.",
+    "coverId": "10085380",
     "added": "2026-10-31"
   },
   {
@@ -797,13 +1026,13 @@
     "year": "1954",
     "series": "Kilkenny",
     "seriesNo": "3",
+    "readingGroup": "Kilkenny",
+    "readingOrder": "1",
     "isbn": "0-553-24758-1",
     "price": "$3.99",
     "format": "Mass-market paperback",
-    "readingGroup": "Kilkenny",
-    "readingOrder": "1",
-    "coverId": "368633",
     "summary": "Lance Kilkenny, a gunfighter trying to leave his reputation behind, finds himself in the middle of a violent range conflict.",
+    "coverId": "368633",
     "added": "2026-10-31"
   },
   {
@@ -815,9 +1044,26 @@
     "year": "1966",
     "price": "$2.95",
     "format": "Mass-market paperback",
-    "coverId": "368651",
     "summary": "Former officer Barnes Kilrone comes to a hostile Western post where his old rival commands, and both men must fight for survival under the threat of attack by Bannock warriors.",
+    "coverId": "368651",
     "added": "2026-10-31"
+  },
+  {
+    "id": "line-war",
+    "title": "Line War",
+    "author": "Neal Asher",
+    "authorSort": "Asher, Neal",
+    "publisher": "Night Shade Books",
+    "year": "2008",
+    "series": "Agent Cormac",
+    "seriesNo": "5",
+    "readingGroup": "Polity",
+    "readingOrder": "7",
+    "isbn": "9781597805193",
+    "format": "Ebook",
+    "summary": "The rogue AI Erebus attacks the Polity with wormships in a campaign that seems to make no sense, and Agent Cormac has to work out its true goal. The Agent Cormac series ends here.",
+    "coverId": "8798722",
+    "added": "2026-11-01"
   },
   {
     "id": "lockdown-tales",
@@ -827,9 +1073,22 @@
     "publisher": "NewCon Press",
     "year": "2021",
     "notes": "Story collection. NewCon no. NCP250.",
-    "coverId": "10532444",
     "summary": "A collection of Neal Asher's short fiction, published by NewCon Press, gathering stories he wrote during the pandemic lockdowns.",
+    "coverId": "10532444",
     "added": "2026-10-31"
+  },
+  {
+    "id": "lucifers-hammer",
+    "title": "Lucifer's Hammer",
+    "author": "Larry Niven & Jerry Pournelle",
+    "authorSort": "Niven, Larry",
+    "publisher": "Random House Publishing Group",
+    "year": "1977",
+    "isbn": "9780449204290",
+    "format": "Ebook",
+    "summary": "A comet strikes the Earth, bringing floods, quakes and a new ice age. As civilization collapses, scattered survivors in California fight to rebuild, and to keep science alive.",
+    "coverId": "4414184",
+    "added": "2026-11-01"
   },
   {
     "id": "machine-vendetta",
@@ -842,8 +1101,8 @@
     "seriesNo": "3",
     "readingGroup": "Revelation Space universe",
     "readingOrder": "7",
-    "coverId": "13564806",
     "summary": "When a veteran officer walks alone and nearly unarmed into a hostile habitat, Prefect Dreyfus must investigate her death and face his conscience over a decision made four years earlier.",
+    "coverId": "13564806",
     "added": "2026-10-31"
   },
   {
@@ -855,12 +1114,40 @@
     "year": "2013",
     "series": "MaddAddam",
     "seriesNo": "3",
-    "format": "Trade paperback",
     "readingGroup": "MaddAddam",
     "readingOrder": "3",
-    "coverId": "11503154",
+    "format": "Trade paperback",
     "summary": "After the plague, Toby and Zeb lead a small group of survivors and the gentle bioengineered Crakers against the violent men who remain. Atwood's trilogy ends here.",
+    "coverId": "11503154",
     "added": "2026-10-31"
+  },
+  {
+    "id": "memoirs-found-in-a-bathtub",
+    "title": "Memoirs Found in a Bathtub",
+    "author": "Stanisław Lem",
+    "authorSort": "Lem, Stanisław",
+    "publisher": "Houghton Mifflin Harcourt",
+    "year": "1961",
+    "isbn": "9780544080089",
+    "format": "Ebook",
+    "summary": "In 3149, a blight has destroyed nearly all the world's paper. A surviving memoir tells of a man trapped in a sealed underground military complex where every order may be a test. A dark satire of bureaucracy.",
+    "coverId": "10693250",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "minds-eye",
+    "title": "Mind's Eye",
+    "author": "Douglas E. Richards",
+    "authorSort": "Richards, Douglas E.",
+    "publisher": "Paragon Press",
+    "year": "2014",
+    "series": "Nick Hall",
+    "seriesNo": "1",
+    "isbn": "9781783013289",
+    "format": "Ebook",
+    "summary": "Nick Hall has lost his memory and is being hunted by killers, then discovers brain implants that let him surf the web and read minds. He has to find out who gave them to him, and why.",
+    "coverId": "10455449",
+    "added": "2026-11-01"
   },
   {
     "id": "mindstar-rising",
@@ -874,9 +1161,35 @@
     "price": "$5.99",
     "format": "Mass-market paperback",
     "notes": "ISBN on spine partly legible (0-812-5…); double-check.",
-    "coverId": "6958833",
     "summary": "In a global-warmed, post-socialist England, psychic ex-soldier Greg Mandel is hired to find out who has been sabotaging a powerful company. First of the Greg Mandel books.",
+    "coverId": "6958833",
     "added": "2026-10-31"
+  },
+  {
+    "id": "mission-one",
+    "title": "Mission One",
+    "author": "Samuel Best",
+    "authorSort": "Best, Samuel",
+    "year": "2017",
+    "series": "Titan Chronicles",
+    "seriesNo": "1",
+    "format": "Ebook",
+    "summary": "Astronaut Jeff Dolan joins the crew of a private expedition to Titan, Saturn's largest moon, on a mission that doesn't go to plan.",
+    "coverId": "12194027",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "mockingbird",
+    "title": "Mockingbird",
+    "author": "Walter Tevis",
+    "authorSort": "Tevis, Walter",
+    "publisher": "RosettaBooks",
+    "year": "1980",
+    "isbn": "978-0-7953-4290-5",
+    "format": "Ebook",
+    "summary": "In a far future where robots run the world and humans have forgotten how to read, a man teaches himself from old silent films, and an aging android who longs to die is forced to confront him.",
+    "coverId": "209598",
+    "added": "2026-11-01"
   },
   {
     "id": "mojave-crossing",
@@ -887,11 +1200,11 @@
     "year": "1964",
     "series": "The Sacketts",
     "seriesNo": "9",
-    "format": "Mass-market paperback",
     "readingGroup": "The Sacketts",
     "readingOrder": "3",
-    "coverId": "368955",
+    "format": "Mass-market paperback",
     "summary": "Tell Sackett, with a load of gold in his saddlebags, agrees to escort a woman across the desert to Los Angeles, and rides straight into a scheme to kill him.",
+    "coverId": "368955",
     "added": "2026-10-31"
   },
   {
@@ -903,12 +1216,27 @@
     "year": "1966",
     "series": "The Sacketts",
     "seriesNo": "12",
-    "format": "Mass-market paperback",
     "readingGroup": "The Sacketts",
     "readingOrder": "4",
-    "coverId": "467608",
+    "format": "Mass-market paperback",
     "summary": "Nolan Sackett, the outlaw of the family, helps a young woman after a lost gold cache and faces rivals who will kill their own kin to get it.",
+    "coverId": "467608",
     "added": "2026-10-31"
+  },
+  {
+    "id": "my-dead-world",
+    "title": "My Dead World",
+    "author": "Jacqueline Druga",
+    "authorSort": "Druga, Jacqueline",
+    "publisher": "Vulpine Press",
+    "year": "2016",
+    "series": "My Dead World",
+    "seriesNo": "1",
+    "isbn": "9781839192241",
+    "format": "Ebook",
+    "summary": "When an outbreak spreads from India, a CDC virologist's warning sends his family to their rural cabin. Nila Carter must keep them alive in a world collapsing around her. First of a series.",
+    "coverId": "14713452",
+    "added": "2026-11-01"
   },
   {
     "id": "naked-god-1",
@@ -919,11 +1247,11 @@
     "year": "1999",
     "series": "Night's Dawn",
     "seriesNo": "3",
-    "format": "Mass-market paperback",
     "readingGroup": "Night's Dawn",
     "readingOrder": "6",
-    "coverId": "287138",
+    "format": "Mass-market paperback",
     "summary": "Faced with a universe-wide invasion by the risen dead, Joshua Calvert and Syrinx sail to the far reaches of space in search of an alien god. The vast Night's Dawn trilogy ends here.",
+    "coverId": "287138",
     "added": "2026-10-31"
   },
   {
@@ -935,11 +1263,11 @@
     "year": "1999",
     "series": "Night's Dawn",
     "seriesNo": "3",
-    "format": "Mass-market paperback",
     "readingGroup": "Night's Dawn",
     "readingOrder": "7",
-    "coverId": "286911",
+    "format": "Mass-market paperback",
     "summary": "Faced with a universe-wide invasion by the risen dead, Joshua Calvert and Syrinx sail to the far reaches of space in search of an alien god. The vast Night's Dawn trilogy ends here.",
+    "coverId": "286911",
     "added": "2026-10-31"
   },
   {
@@ -951,11 +1279,11 @@
     "year": "1997",
     "series": "Night's Dawn",
     "seriesNo": "2",
-    "format": "Mass-market paperback",
     "readingGroup": "Night's Dawn",
     "readingOrder": "4",
-    "coverId": "286909",
+    "format": "Mass-market paperback",
     "summary": "The possessed spread from world to world, unleashing the souls of the dead on the Confederation, while Joshua Calvert hunts down a scientist who created a planet-killing weapon.",
+    "coverId": "286909",
     "added": "2026-10-31"
   },
   {
@@ -967,11 +1295,11 @@
     "year": "1997",
     "series": "Night's Dawn",
     "seriesNo": "2",
-    "format": "Mass-market paperback",
     "readingGroup": "Night's Dawn",
     "readingOrder": "5",
-    "coverId": "286932",
+    "format": "Mass-market paperback",
     "summary": "The possessed spread from world to world, unleashing the souls of the dead on the Confederation, while Joshua Calvert hunts down a scientist who created a planet-killing weapon.",
+    "coverId": "286932",
     "added": "2026-10-31"
   },
   {
@@ -983,8 +1311,8 @@
     "year": "1959",
     "price": "$0.95",
     "format": "Mass-market paperback",
-    "coverId": "11686451",
     "summary": "A passenger plane crash-lands on the Greenland ice cap, and a doctor at a remote research station leads the survivors on a desperate trek, knowing a killer is among them.",
+    "coverId": "11686451",
     "added": "2026-10-31"
   },
   {
@@ -996,11 +1324,11 @@
     "year": "2016",
     "series": "Chronicle of the Fallers",
     "seriesNo": "2",
-    "format": "Mass-market paperback",
     "readingGroup": "Commonwealth universe",
     "readingOrder": "7",
-    "coverId": "8428686",
+    "format": "Mass-market paperback",
     "summary": "On the planet Bienvenido, alien Fallers are hiding inside human bodies, and a secret resistance armed with forbidden technology races to warn a society that fears it. Concludes the Chronicle of the Fallers.",
+    "coverId": "8428686",
     "added": "2026-10-31"
   },
   {
@@ -1011,8 +1339,8 @@
     "year": "1949",
     "format": "Mass-market paperback",
     "notes": "Spine code D1640.",
-    "coverId": "9267242",
     "summary": "Winston Smith rewrites history for the Party in totalitarian Oceania, and risks everything on a forbidden love affair and a small rebellion against Big Brother.",
+    "coverId": "9267242",
     "added": "2026-10-31"
   },
   {
@@ -1025,9 +1353,65 @@
     "price": "$0.95",
     "format": "Mass-market paperback",
     "notes": "Pocket no. 77143 on spine.",
-    "coverId": "900454",
     "summary": "A man drifts through the American West of the 1960s, carrying an octopus in a tank and inventing and discarding memories. A strange, hypnotic counterculture novel.",
+    "coverId": "900454",
     "added": "2026-10-31"
+  },
+  {
+    "id": "occupied-earth",
+    "title": "Occupied Earth: Stories of Aliens, Resistance and Survival at All Costs",
+    "author": "Richard J. Brewer & Gary Phillips",
+    "authorSort": "Brewer, Richard J.",
+    "publisher": "Polis Books",
+    "year": "2015",
+    "isbn": "9781940610573",
+    "format": "Ebook",
+    "summary": "An anthology of stories about life under alien occupation, with collaborators, resistance fighters and invaders who may look just like us.",
+    "coverFile": "covers/occupied-earth.jpg",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "omega-days",
+    "title": "Omega Days",
+    "author": "John L. Campbell",
+    "authorSort": "Campbell, John L.",
+    "publisher": "Penguin",
+    "year": "2013",
+    "series": "Omega Days",
+    "seriesNo": "1",
+    "isbn": "9780698146334",
+    "format": "Ebook",
+    "summary": "A virus turns San Francisco's dead into hunters of the living, and a priest and a scattered group of survivors try to get through the first days of the end.",
+    "coverFile": "covers/omega-days.jpg",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "operation-ivy-bells",
+    "title": "Operation Ivy Bells",
+    "author": "Robert G. Williscroft",
+    "authorSort": "Williscroft, Robert G.",
+    "publisher": "Starman Press",
+    "year": "2014",
+    "isbn": "9780982166284",
+    "format": "Ebook",
+    "summary": "A diver with a secret Cold War spy group goes on a deep-sea mission to tap Soviet cables, and faces the dangers of the ocean as well as his enemies.",
+    "coverId": "12551350",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "orbital-decay",
+    "title": "Orbital Decay",
+    "author": "Allen M. Steele",
+    "authorSort": "Steele, Allen M.",
+    "publisher": "Open Road Media",
+    "year": "1989",
+    "series": "Near Space",
+    "seriesNo": "1",
+    "isbn": "9781480440050",
+    "format": "Ebook",
+    "summary": "A former fisherman takes a job building space stations in low orbit, and he and his crew of blue-collar misfits stumble on a government secret. Allen Steele's first novel.",
+    "coverId": "284553",
+    "added": "2026-11-01"
   },
   {
     "id": "orbus",
@@ -1039,9 +1423,9 @@
     "series": "Spatterjay",
     "seriesNo": "3",
     "readingGroup": "Polity",
-    "readingOrder": "12",
-    "coverId": "8627715",
+    "readingOrder": "15",
     "summary": "Old Captain Orbus, a human hardened by the Spatterjay virus, takes to space and steers into a war brewing between the prador and the Polity along the Graveyard. The Spatterjay trilogy ends here.",
+    "coverId": "8627715",
     "added": "2026-10-31"
   },
   {
@@ -1053,11 +1437,11 @@
     "year": "2003",
     "series": "MaddAddam",
     "seriesNo": "1",
-    "format": "Trade paperback",
     "readingGroup": "MaddAddam",
     "readingOrder": "1",
-    "coverId": "12507658",
+    "format": "Trade paperback",
     "summary": "Snowman may be the last human alive, and he recalls how his brilliant friend Crake and the woman they both loved, Oryx, came to the edge of the world's end. First of the MaddAddam trilogy.",
+    "coverId": "12507658",
     "added": "2026-10-31"
   },
   {
@@ -1069,11 +1453,11 @@
     "year": "2004",
     "series": "Commonwealth Saga",
     "seriesNo": "1",
-    "format": "Mass-market paperback",
     "readingGroup": "Commonwealth universe",
     "readingOrder": "1",
-    "coverId": "7912438",
+    "format": "Mass-market paperback",
     "summary": "When an astronomer sees two stars vanish behind a sudden barrier, the wormhole-linked Commonwealth sends a ship to learn why, and lets something loose. A sprawling space opera that opens the Commonwealth Saga.",
+    "coverId": "7912438",
     "added": "2026-10-31"
   },
   {
@@ -1084,8 +1468,8 @@
     "publisher": "Bantam",
     "year": "1985",
     "format": "Mass-market paperback",
-    "coverId": "4700304",
     "summary": "A drifter on the run takes a repair job at a remote ranch run by two women, and stumbles into a missing-person case and a will that puts him in danger.",
+    "coverId": "4700304",
     "added": "2026-10-31"
   },
   {
@@ -1100,8 +1484,8 @@
     "isbn": "0-523-48521-2",
     "price": "$2.50",
     "format": "Mass-market paperback",
-    "coverId": "5542306",
     "summary": "Brion Brandd, champion of a brutal planet, is sent to stop a nuclear war on the scorching desert world of Dis, and must first understand why its people want to destroy their enemies.",
+    "coverId": "5542306",
     "added": "2026-10-31"
   },
   {
@@ -1114,9 +1498,26 @@
     "series": "Alex Benedict",
     "seriesNo": "2",
     "format": "Hardcover",
-    "coverId": "6819242",
     "summary": "Sixty years after a luxury starship's passengers and crew vanished without a trace, antiquities dealer Alex Benedict looks into relics of the voyage, and somebody tries to stop him.",
+    "coverId": "6819242",
     "added": "2026-10-31"
+  },
+  {
+    "id": "polity-agent",
+    "title": "Polity Agent",
+    "author": "Neal Asher",
+    "authorSort": "Asher, Neal",
+    "publisher": "Night Shade Books",
+    "year": "2006",
+    "series": "Agent Cormac",
+    "seriesNo": "4",
+    "readingGroup": "Polity",
+    "readingOrder": "6",
+    "isbn": "9781597805162",
+    "format": "Ebook",
+    "summary": "A gate opens from eight centuries in the future, and what comes through warns of something following. Agent Ian Cormac is drawn into the growing threat of a rogue AI armed with Jain technology.",
+    "coverId": "754540",
+    "added": "2026-11-01"
   },
   {
     "id": "prador-moon",
@@ -1128,8 +1529,8 @@
     "series": "Polity",
     "readingGroup": "Polity",
     "readingOrder": "2",
-    "coverId": "2969142",
     "summary": "Humanity makes first contact with the crab-like, ruthless prador, and war breaks out at once. Told through a young technician and a veteran on the front lines, it's the start of the Polity's great conflict.",
+    "coverId": "2969142",
     "added": "2026-10-31"
   },
   {
@@ -1141,11 +1542,11 @@
     "year": "1998",
     "series": "Jurisdiction",
     "seriesNo": "2",
-    "format": "Mass-market paperback",
     "readingGroup": "Jurisdiction",
     "readingOrder": "1",
-    "coverId": "236207",
+    "format": "Mass-market paperback",
     "summary": "Andrej Koscuisko, a Fleet surgeon forced to be an interrogator, is posted to a prison camp where something is badly wrong, and is pushed toward open defiance.",
+    "coverId": "236207",
     "added": "2026-10-31"
   },
   {
@@ -1157,8 +1558,8 @@
     "year": "2005",
     "price": "$7.99",
     "format": "Mass-market paperback",
-    "coverId": "284350",
     "summary": "When Saturn's moon Janus suddenly leaves its orbit, the crew of a comet-mining ship is sent after it, and a rift between its captain and her friend lasts across an impossible journey.",
+    "coverId": "284350",
     "added": "2026-10-31"
   },
   {
@@ -1170,11 +1571,11 @@
     "year": "1996",
     "series": "Night's Dawn",
     "seriesNo": "1",
-    "format": "Mass-market paperback",
     "readingGroup": "Night's Dawn",
     "readingOrder": "2",
-    "coverId": "286907",
+    "format": "Mass-market paperback",
     "summary": "In the twenty-seventh century, humanity spans hundreds of worlds when a chance event lets the souls of the dead return to possess the living. The huge opening of the Night's Dawn trilogy.",
+    "coverId": "286907",
     "added": "2026-10-31"
   },
   {
@@ -1186,12 +1587,25 @@
     "year": "1996",
     "series": "Night's Dawn",
     "seriesNo": "1",
-    "format": "Mass-market paperback",
     "readingGroup": "Night's Dawn",
     "readingOrder": "3",
-    "coverId": "286908",
+    "format": "Mass-market paperback",
     "summary": "In the twenty-seventh century, humanity spans hundreds of worlds when a chance event lets the souls of the dead return to possess the living. The huge opening of the Night's Dawn trilogy.",
+    "coverId": "286908",
     "added": "2026-10-31"
+  },
+  {
+    "id": "red-alert",
+    "title": "Red Alert",
+    "author": "Peter Bryant",
+    "authorSort": "Bryant, Peter",
+    "publisher": "RosettaBooks",
+    "year": "1958",
+    "isbn": "9780795301261",
+    "format": "Ebook",
+    "summary": "A deranged American general orders a nuclear strike on the Soviet Union, and the President has hours to stop it. The tense Cold War thriller that became the basis for Dr. Strangelove.",
+    "coverId": "6444227",
+    "added": "2026-11-01"
   },
   {
     "id": "redemption-ark",
@@ -1202,12 +1616,12 @@
     "year": "2002",
     "series": "Revelation Space",
     "seriesNo": "2",
-    "price": "$8.50",
-    "format": "Mass-market paperback",
     "readingGroup": "Revelation Space universe",
     "readingOrder": "3",
-    "coverId": "12296881",
+    "price": "$8.50",
+    "format": "Mass-market paperback",
     "summary": "The Inhibitors have been woken, and Conjoiner veteran Clavain defects to race his own people for a cache of doomsday weapons, the only hope of holding the machines off.",
+    "coverId": "12296881",
     "added": "2026-10-31"
   },
   {
@@ -1218,8 +1632,25 @@
     "publisher": "Bantam",
     "year": "1970",
     "format": "Mass-market paperback",
-    "coverId": "535086",
     "summary": "Abandoned at four, Val Darrant is raised by the gambler Will Reilly across boomtowns and European capitals. After Reilly's death, he sets out to find those responsible and a life of his own.",
+    "coverId": "535086",
+    "added": "2026-10-31"
+  },
+  {
+    "id": "revelation-space",
+    "title": "Revelation Space",
+    "author": "Alastair Reynolds",
+    "authorSort": "Reynolds, Alastair",
+    "publisher": "Ace",
+    "year": "2000",
+    "series": "Revelation Space",
+    "seriesNo": "1",
+    "readingGroup": "Revelation Space universe",
+    "readingOrder": "2",
+    "price": "$7.99",
+    "format": "Mass-market paperback",
+    "summary": "Archaeologist Dan Sylveste is obsessed with what wiped out an alien civilization, and a starship crew with its own agenda comes for him. Finding the answer could be the worst thing he ever does. Reynolds's debut.",
+    "coverId": "911071",
     "added": "2026-10-31"
   },
   {
@@ -1253,23 +1684,6 @@
     "added": "2026-10-31"
   },
   {
-    "id": "revelation-space",
-    "title": "Revelation Space",
-    "author": "Alastair Reynolds",
-    "authorSort": "Reynolds, Alastair",
-    "publisher": "Ace",
-    "year": "2000",
-    "series": "Revelation Space",
-    "seriesNo": "1",
-    "price": "$7.99",
-    "format": "Mass-market paperback",
-    "readingGroup": "Revelation Space universe",
-    "readingOrder": "2",
-    "coverId": "911071",
-    "summary": "Archaeologist Dan Sylveste is obsessed with what wiped out an alien civilization, and a starship crew with its own agenda comes for him. Finding the answer could be the worst thing he ever does. Reynolds's debut.",
-    "added": "2026-10-31"
-  },
-  {
     "id": "revenger",
     "title": "Revenger",
     "author": "Alastair Reynolds",
@@ -1280,8 +1694,8 @@
     "seriesNo": "1",
     "readingGroup": "Revenger",
     "readingOrder": "1",
-    "coverId": "8472398",
     "summary": "Sisters Adrana and Fura Ness join a crew that cracks open ancient treasure-worlds, until a feared pirate strikes. Fura sets out for revenge, and it changes her.",
+    "coverId": "8472398",
     "added": "2026-10-31"
   },
   {
@@ -1294,9 +1708,22 @@
     "isbn": "0-449-20058-2",
     "price": "$3.50",
     "format": "Mass-market paperback",
-    "coverId": "15091264",
     "summary": "A hunt for war criminals and looted treasure leads into the Brazilian jungle and a lost city, in a tense expedition where nobody's motives are what they claim.",
+    "coverId": "15091264",
     "added": "2026-10-31"
+  },
+  {
+    "id": "roadside-picnic",
+    "title": "Roadside Picnic",
+    "author": "Arkady Strugatsky & Boris Strugatsky",
+    "authorSort": "Strugatsky, Arkady",
+    "publisher": "Chicago Review Press",
+    "year": "1972",
+    "isbn": "9781613743447",
+    "format": "Ebook",
+    "summary": "Red Schuhart is a stalker, one of the young men who risk death to steal mysterious objects from the Zone left behind by alien visitors. The Soviet classic that inspired Tarkovsky's Stalker.",
+    "coverId": "14356127",
+    "added": "2026-11-01"
   },
   {
     "id": "sackett",
@@ -1307,11 +1734,11 @@
     "year": "1961",
     "series": "The Sacketts",
     "seriesNo": "7",
-    "format": "Mass-market paperback",
     "readingGroup": "The Sacketts",
     "readingOrder": "2",
-    "coverId": "1189091",
+    "format": "Mass-market paperback",
     "summary": "William Tell Sackett finds a hidden gold vein high in the Colorado mountains, along with a girl living alone nearby, and has to hold them both against a mob of claim-jumpers.",
+    "coverId": "1189091",
     "added": "2026-10-31"
   },
   {
@@ -1323,26 +1750,11 @@
     "year": "1974",
     "series": "The Sacketts",
     "seriesNo": "1",
-    "format": "Mass-market paperback",
     "readingGroup": "The Sacketts",
     "readingOrder": "6",
-    "coverId": "468191",
+    "format": "Mass-market paperback",
     "summary": "In Elizabethan England, Barnabas Sackett finds Roman coins in the fens, makes a powerful enemy, and flees across the sea to the American wilderness, starting the Sackett line.",
-    "added": "2026-10-31"
-  },
-  {
-    "id": "salvation-lost",
-    "title": "Salvation Lost",
-    "author": "Peter F. Hamilton",
-    "authorSort": "Hamilton, Peter F.",
-    "publisher": "Del Rey",
-    "year": "2019",
-    "series": "Salvation Sequence",
-    "seriesNo": "2",
-    "readingGroup": "Salvation Sequence",
-    "readingOrder": "2",
-    "coverId": "9120190",
-    "summary": "Humanity welcomed the Olyix, only to find what the aliens truly want. As their attack begins, a covert group fights back, while far-future soldiers prepare to end the war. Second in the Salvation Sequence.",
+    "coverId": "468191",
     "added": "2026-10-31"
   },
   {
@@ -1356,8 +1768,23 @@
     "seriesNo": "1",
     "readingGroup": "Salvation Sequence",
     "readingOrder": "1",
-    "coverId": "9159027",
     "summary": "In 2204, instant jump gates link humanity's worlds, and a team sent to investigate a crashed alien ship realizes one of their own is a traitor. A far-future thread hints at where it all ends.",
+    "coverId": "9159027",
+    "added": "2026-10-31"
+  },
+  {
+    "id": "salvation-lost",
+    "title": "Salvation Lost",
+    "author": "Peter F. Hamilton",
+    "authorSort": "Hamilton, Peter F.",
+    "publisher": "Del Rey",
+    "year": "2019",
+    "series": "Salvation Sequence",
+    "seriesNo": "2",
+    "readingGroup": "Salvation Sequence",
+    "readingOrder": "2",
+    "summary": "Humanity welcomed the Olyix, only to find what the aliens truly want. As their attack begins, a covert group fights back, while far-future soldiers prepare to end the war. Second in the Salvation Sequence.",
+    "coverId": "9120190",
     "added": "2026-10-31"
   },
   {
@@ -1368,8 +1795,8 @@
     "publisher": "Fawcett Crest",
     "year": "1977",
     "format": "Mass-market paperback",
-    "coverId": "6820746",
     "summary": "An oil baron's giant rig, Seawitch, is targeted by rival magnates and a vengeful troubleshooter he once wronged, and the baron's two daughters are caught in the fight.",
+    "coverId": "6820746",
     "added": "2026-10-31"
   },
   {
@@ -1383,9 +1810,24 @@
     "seriesNo": "2",
     "readingGroup": "Revenger",
     "readingOrder": "2",
-    "coverId": "9063945",
     "summary": "The Ness sisters now fly a notorious dead pirate's ship and inherit her terrible reputation, along with her enemies. Second in the Revenger trilogy.",
+    "coverId": "9063945",
     "added": "2026-10-31"
+  },
+  {
+    "id": "shift",
+    "title": "Shift",
+    "author": "Hugh Howey",
+    "authorSort": "Howey, Hugh",
+    "publisher": "Houghton Mifflin Harcourt",
+    "year": "2013",
+    "series": "Silo",
+    "seriesNo": "2",
+    "isbn": "9780358447948",
+    "format": "Ebook",
+    "summary": "The prequel to Wool, showing how the silos were built, why, and what it takes to keep the people in them from learning the truth. It runs alongside the story of a man who wakes after centuries asleep.",
+    "coverId": "11712987",
+    "added": "2026-11-01"
   },
   {
     "id": "sitka",
@@ -1397,9 +1839,22 @@
     "isbn": "0-451-19401-2",
     "price": "$5.99",
     "format": "Mass-market paperback",
-    "coverId": "292272",
     "summary": "Jean LaBarge, a frontier-born adventurer, sails to Russian-held Alaska with a dream of its future, and is caught up in intrigue leading to the sale of the territory to the United States.",
+    "coverId": "292272",
     "added": "2026-10-31"
+  },
+  {
+    "id": "skyfall",
+    "title": "Skyfall",
+    "author": "Harry Harrison",
+    "authorSort": "Harrison, Harry",
+    "publisher": "Tor",
+    "year": "1976",
+    "isbn": "9781466823259",
+    "format": "Ebook",
+    "summary": "A joint American and Soviet spacecraft, the largest ever built, is stranded in a failing orbit and will fall to Earth. A race begins to rescue its crew and avert disaster.",
+    "coverFile": "covers/skyfall.jpg",
+    "added": "2026-11-01"
   },
   {
     "id": "star-rebel",
@@ -1413,9 +1868,23 @@
     "isbn": "0-553-23852-3",
     "price": "$2.50",
     "format": "Mass-market paperback",
-    "coverId": "9635162",
     "summary": "Bran Tregare is forced into a brutal space academy run by a tyrannical interstellar power, and survives its cruelty to plan a mutiny. Set in the same universe as Busby's Rissa Kerguelen books.",
+    "coverId": "9635162",
     "added": "2026-10-31"
+  },
+  {
+    "id": "starfire",
+    "title": "StarFire",
+    "author": "Mike Lee",
+    "authorSort": "Lee, Mike",
+    "publisher": "Breakwater Harbor Books",
+    "year": "2011",
+    "series": "Vince Lombard",
+    "seriesNo": "1",
+    "format": "Ebook",
+    "summary": "Marine Captain Vince Lombard is sent to find out what happened to the Alliance's newest warship and its huge crew, and ends up facing a board of inquiry for what he did next.",
+    "coverFile": "covers/starfire.jpg",
+    "added": "2026-11-01"
   },
   {
     "id": "starworld",
@@ -1426,14 +1895,27 @@
     "year": "1981",
     "series": "To the Stars",
     "seriesNo": "3",
+    "readingGroup": "To the Stars",
+    "readingOrder": "3",
     "isbn": "0-553-14647-5",
     "price": "$2.25",
     "format": "Mass-market paperback",
-    "readingGroup": "To the Stars",
-    "readingOrder": "3",
-    "coverId": "6758303",
     "summary": "Jan Kulozik leads the final rebellion against the oppressive rule of Earth, taking the struggle into space. The To the Stars trilogy ends here.",
+    "coverId": "6758303",
     "added": "2026-10-31"
+  },
+  {
+    "id": "station-eleven",
+    "title": "Station Eleven",
+    "author": "Emily St. John Mandel",
+    "authorSort": "Mandel, Emily St. John",
+    "publisher": "Vintage",
+    "year": "2014",
+    "isbn": "9780804172448",
+    "format": "Ebook",
+    "summary": "A flu pandemic ends the modern world. Twenty years later, a troupe of actors and musicians travels the Great Lakes performing Shakespeare, in a story of what lasts after collapse.",
+    "coverId": "7369961",
+    "added": "2026-11-01"
   },
   {
     "id": "storm",
@@ -1445,9 +1927,54 @@
     "isbn": "0-345-24205-X",
     "price": "$1.75",
     "format": "Mass-market paperback",
-    "coverId": "13994377",
     "summary": "A Pacific storm, named Maria by a junior forecaster, sweeps across California over twelve days, and affects everyone in its path. A novel with the weather as its main character.",
+    "coverId": "13994377",
     "added": "2026-10-31"
+  },
+  {
+    "id": "survival-colony-9",
+    "title": "Survival Colony 9",
+    "author": "Joshua David Bellin",
+    "authorSort": "Bellin, Joshua David",
+    "publisher": "Simon & Schuster",
+    "year": "2014",
+    "series": "Survival Colony 9",
+    "seriesNo": "1",
+    "isbn": "9781481403566",
+    "format": "Ebook",
+    "summary": "Querry Genn can't remember anything before the last six months, a danger in a colony where the weak get left behind, in a war-ruined world stalked by shape-stealing creatures.",
+    "coverId": "8184357",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "system-collapse",
+    "title": "System Collapse",
+    "author": "Martha Wells",
+    "authorSort": "Wells, Martha",
+    "publisher": "Tor",
+    "year": "2023",
+    "series": "The Murderbot Diaries",
+    "seriesNo": "7",
+    "isbn": "9781250826978",
+    "format": "Ebook",
+    "summary": "After the events of Network Effect, Murderbot and its humans try to save a colony threatened by a corporation's rescue ships, while something is wrong with Murderbot itself. Seventh in The Murderbot Diaries.",
+    "coverId": "14538949",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "terms-of-enlistment",
+    "title": "Terms of Enlistment",
+    "author": "Marko Kloos",
+    "authorSort": "Kloos, Marko",
+    "publisher": "47North",
+    "year": "2013",
+    "series": "Frontlines",
+    "seriesNo": "1",
+    "isbn": "9781477809785",
+    "format": "Ebook",
+    "summary": "In 2108, Andrew Grayson joins the military to escape the welfare slums, and finds himself in the middle of a brutal war on Earth and the colonies. First of the Frontlines series.",
+    "coverId": "12183433",
+    "added": "2026-11-01"
   },
   {
     "id": "the-abyss-beyond-dreams",
@@ -1458,11 +1985,11 @@
     "year": "2014",
     "series": "Chronicle of the Fallers",
     "seriesNo": "1",
-    "format": "Mass-market paperback",
     "readingGroup": "Commonwealth universe",
     "readingOrder": "6",
-    "coverId": "8109214",
+    "format": "Mass-market paperback",
     "summary": "Nigel Sheldon follows the visions of a prophet into the Void and crashes on Bienvenido, a planet of lost humans menaced by the deadly alien Fallers.",
+    "coverId": "8109214",
     "added": "2026-10-31"
   },
   {
@@ -1474,8 +2001,8 @@
     "year": "1980",
     "format": "Trade paperback",
     "notes": "Foreword by William Gibson. Context's \"Science Fiction That Changed the World\" edition.",
-    "coverId": "936735",
     "summary": "On the wild world of Reverie, the Artificial Kid is a celebrity who broadcasts his own staged fights. An unexpected encounter drags him into a plot beyond anything he has ever faced.",
+    "coverId": "936735",
     "added": "2026-10-31"
   },
   {
@@ -1487,9 +2014,67 @@
     "year": "1974",
     "price": "$3.99",
     "format": "Mass-market paperback",
-    "coverId": "4700496",
     "summary": "Sean Mulkerin returns from sea to save his family's Malibu ranch from ruin. His only hope is a rumored hoard of gold in the wild, haunted California hills.",
+    "coverId": "4700496",
     "added": "2026-10-31"
+  },
+  {
+    "id": "the-city-and-the-stars",
+    "title": "The City and the Stars",
+    "author": "Arthur C. Clarke",
+    "authorSort": "Clarke, Arthur C.",
+    "publisher": "RosettaBooks",
+    "year": "1956",
+    "isbn": "9780795325014",
+    "format": "Ebook",
+    "summary": "A billion years from now, Diaspar is thought to be Earth's last city, sealed from a world no one has seen for ages. Its one truly new citizen, Alvin, sets out to discover what's beyond the walls.",
+    "coverId": "5540971",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "the-collected-short-stories-of-louis-lamour-volume-1",
+    "title": "The Collected Short Stories of Louis L'Amour, Volume 1: The Frontier Stories",
+    "author": "Louis L'Amour",
+    "authorSort": "L'Amour, Louis",
+    "publisher": "Bantam",
+    "year": "2003",
+    "series": "The Collected Short Stories of Louis L'Amour",
+    "seriesNo": "1",
+    "isbn": "9780553898842",
+    "format": "Ebook",
+    "summary": "The first of seven volumes of L'Amour's short fiction, with thirty-six frontier tales of Apache raids, cattle drives, gunfights and lonely homesteads.",
+    "coverId": "6393427",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "the-collected-stories-of-arthur-c-clarke-volume-i",
+    "title": "The Collected Stories of Arthur C. Clarke, Volume I: History Lesson",
+    "author": "Arthur C. Clarke",
+    "authorSort": "Clarke, Arthur C.",
+    "publisher": "RosettaBooks",
+    "year": "2000",
+    "series": "The Collected Stories of Arthur C. Clarke",
+    "seriesNo": "1",
+    "isbn": "9780795325045",
+    "format": "Ebook",
+    "summary": "The first volume of Clarke's complete short fiction, gathering his earliest stories, from the 1930s and 1940s.",
+    "coverFile": "covers/the-collected-stories-of-arthur-c-clarke-volume-i.jpg",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "the-collected-stories-of-arthur-c-clarke-volume-iii",
+    "title": "The Collected Stories of Arthur C. Clarke, Volume III: The Star",
+    "author": "Arthur C. Clarke",
+    "authorSort": "Clarke, Arthur C.",
+    "publisher": "RosettaBooks",
+    "year": "2000",
+    "series": "The Collected Stories of Arthur C. Clarke",
+    "seriesNo": "3",
+    "isbn": "9780795329081",
+    "format": "Ebook",
+    "summary": "The third volume of Clarke's complete short fiction, covering the 1950s, including the Hugo-winning title story about astronauts who discover a civilization destroyed by a supernova.",
+    "coverFile": "covers/the-collected-stories-of-arthur-c-clarke-volume-iii.jpg",
+    "added": "2026-11-01"
   },
   {
     "id": "the-confederation-handbook",
@@ -1499,11 +2084,11 @@
     "publisher": "Macmillan",
     "year": "2000",
     "series": "Night's Dawn",
-    "notes": "Companion guide to the Night's Dawn universe.",
     "readingGroup": "Night's Dawn",
     "readingOrder": "8",
-    "coverId": "287212",
+    "notes": "Companion guide to the Night's Dawn universe.",
     "summary": "A companion guide to the Night's Dawn trilogy, covering the history, worlds, technology and characters of its universe.",
+    "coverId": "287212",
     "added": "2026-10-31"
   },
   {
@@ -1518,9 +2103,22 @@
     "price": "$1.95",
     "format": "Mass-market paperback",
     "notes": "First published as Junkyard Planet.",
-    "coverId": "12196488",
     "summary": "On the abandoned planet Poictesme, Conn Maxwell returns home with word of Merlin, a legendary supercomputer left over from an old war, and sets off a hunt to find it. First published as Junkyard Planet.",
+    "coverId": "12196488",
     "added": "2026-10-31"
+  },
+  {
+    "id": "the-crack-in-space",
+    "title": "The Crack in Space",
+    "author": "Philip K. Dick",
+    "authorSort": "Dick, Philip K.",
+    "publisher": "Mariner Books",
+    "year": "1966",
+    "isbn": "9780547572994",
+    "format": "Ebook",
+    "summary": "A repairman discovers a route to a parallel world, which an overpopulated Earth sees as a chance for colonization, or conquest. A presidential race turns on what's done with it.",
+    "coverId": "13840451",
+    "added": "2026-11-01"
   },
   {
     "id": "the-dark-beyond-the-stars",
@@ -1530,8 +2128,8 @@
     "publisher": "Tor",
     "year": "1991",
     "format": "Hardcover",
-    "coverId": "182918",
     "summary": "After two thousand years searching for alien life aboard the failing starship Astron, a young crew member begins to ask why he can't remember his past, and how far the captain will go.",
+    "coverId": "182918",
     "added": "2026-10-31"
   },
   {
@@ -1543,12 +2141,23 @@
     "year": "1960",
     "series": "The Sacketts",
     "seriesNo": "6",
-    "format": "Mass-market paperback",
     "readingGroup": "The Sacketts",
     "readingOrder": "1",
-    "coverId": "371494",
+    "format": "Mass-market paperback",
     "summary": "Tyrel and Orrin Sackett leave the Tennessee hills after a feud and head west on cattle drives to New Mexico, where they find love, enemies and a town to clean up.",
+    "coverId": "371494",
     "added": "2026-10-31"
+  },
+  {
+    "id": "the-death-of-grass",
+    "title": "The Death of Grass",
+    "author": "John Christopher",
+    "authorSort": "Christopher, John",
+    "year": "1956",
+    "format": "Ebook",
+    "summary": "A virus wipes out the world's grasses and grains, and as Britain falls into starvation, one family fights its way across the country to a fortified valley, giving up their decency along the way.",
+    "coverId": "8477656",
+    "added": "2026-11-01"
   },
   {
     "id": "the-departure",
@@ -1561,9 +2170,22 @@
     "seriesNo": "1",
     "readingGroup": "The Owner",
     "readingOrder": "1",
-    "coverId": "10747503",
     "summary": "Alan Saul wakes in a crate on the way to an incinerator with no memory and an implant in his head, and sets out to bring down the brutal Committee that rules Earth. First of the Owner series.",
+    "coverId": "10747503",
     "added": "2026-10-31"
+  },
+  {
+    "id": "the-dispossessed",
+    "title": "The Dispossessed",
+    "author": "Ursula K. Le Guin",
+    "authorSort": "Le Guin, Ursula K.",
+    "publisher": "Gollancz",
+    "year": "1974",
+    "isbn": "9781473206069",
+    "format": "Ebook",
+    "summary": "Physicist Shevek travels from his anarchist moon to the capitalist planet it broke away from, trying to reunite two worlds divided for centuries. Winner of the Hugo and Nebula Awards.",
+    "coverId": "14817269",
+    "added": "2026-11-01"
   },
   {
     "id": "the-dog-stars",
@@ -1573,8 +2195,8 @@
     "publisher": "Vintage",
     "year": "2012",
     "format": "Trade paperback",
-    "coverId": "8669196",
     "summary": "Hig, a pilot who survived a flu that killed nearly everyone, lives at a Colorado airfield with his dog and a dangerous neighbor. A faint radio signal makes him fly beyond the point of no return.",
+    "coverId": "8669196",
     "added": "2026-10-31"
   },
   {
@@ -1586,11 +2208,11 @@
     "year": "2007",
     "series": "Void Trilogy",
     "seriesNo": "1",
-    "format": "Mass-market paperback",
     "readingGroup": "Commonwealth universe",
     "readingOrder": "3",
-    "coverId": "5506751",
+    "format": "Mass-market paperback",
     "summary": "A cult wants to pilgrimage into the Void, a galaxy-eating mystery at the core, and its dreams of a man called Edeard threaten to trigger disaster. The first of the Void Trilogy.",
+    "coverId": "5506751",
     "added": "2026-10-31"
   },
   {
@@ -1601,12 +2223,24 @@
     "publisher": "Cosmos Books",
     "year": "2006",
     "series": "Polity",
-    "notes": "Story collection.",
     "readingGroup": "Polity",
-    "readingOrder": "15",
-    "coverId": "594880",
+    "readingOrder": "18",
+    "notes": "Story collection.",
     "summary": "A collection of Neal Asher's short stories, most of them set in the Polity universe, including the title story about a strange alien recovered from space.",
+    "coverId": "594880",
     "added": "2026-10-31"
+  },
+  {
+    "id": "the-eternal-moment-and-other-stories",
+    "title": "The Eternal Moment and Other Stories",
+    "author": "E. M. Forster",
+    "authorSort": "Forster, E. M.",
+    "publisher": "Project Gutenberg",
+    "year": "1928",
+    "format": "Ebook",
+    "summary": "Six stories of fantasy and prophecy by the author of A Passage to India, including The Machine Stops, the startling 1909 vision of a humanity dependent on a global machine.",
+    "coverId": "9579147",
+    "added": "2026-11-01"
   },
   {
     "id": "the-evolutionary-void",
@@ -1617,11 +2251,11 @@
     "year": "2010",
     "series": "Void Trilogy",
     "seriesNo": "3",
-    "format": "Mass-market paperback",
     "readingGroup": "Commonwealth universe",
     "readingOrder": "5",
-    "coverId": "8779825",
+    "format": "Mass-market paperback",
     "summary": "As the pilgrimage into the Void nears, Araminta is hunted across the galaxy, and Edeard the Waterwalker faces new enemies. The Void Trilogy ends here.",
+    "coverId": "8779825",
     "added": "2026-10-31"
   },
   {
@@ -1634,9 +2268,36 @@
     "isbn": "0-553-25303-4",
     "price": "$3.99",
     "format": "Mass-market paperback",
-    "coverId": "368683",
     "summary": "Ronan Chantry heads into the newly bought Louisiana Territory with a rare breech-loading rifle, on a journey that brings him up against murderers and the search for lost treasure.",
+    "coverId": "368683",
     "added": "2026-10-31"
+  },
+  {
+    "id": "the-fetch",
+    "title": "The Fetch",
+    "author": "Neal Asher",
+    "authorSort": "Asher, Neal",
+    "year": "2026",
+    "series": "Polity",
+    "format": "Ebook",
+    "summary": "Set after the Polity's war with the prador, this novella follows the Fetch, one of the Polity's terror drones, as the two sides clean up the mess.",
+    "coverFile": "covers/the-fetch.jpg",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "the-forever-war",
+    "title": "The Forever War",
+    "author": "Joe Haldeman",
+    "authorSort": "Haldeman, Joe",
+    "publisher": "Open Road Media",
+    "year": "1974",
+    "series": "The Forever War",
+    "seriesNo": "1",
+    "isbn": "9781497695566",
+    "format": "Ebook",
+    "summary": "William Mandella is drafted into an interstellar war, and time dilation means each tour costs him decades back on Earth, which he hardly recognizes when he returns. Winner of the Hugo and Nebula Awards.",
+    "coverId": "8703210",
+    "added": "2026-11-01"
   },
   {
     "id": "the-golden-rendezvous",
@@ -1646,22 +2307,8 @@
     "publisher": "Fontana",
     "year": "1962",
     "format": "Mass-market paperback",
-    "coverId": "6409798",
     "summary": "A luxury liner carrying gold and a missing atomic scientist is hijacked, and its first officer, John Carter, must outwit the pirates who hold a nuclear device.",
-    "added": "2026-10-31"
-  },
-  {
-    "id": "the-guns-of-navarone-2",
-    "title": "The Guns of Navarone",
-    "author": "Alistair MacLean",
-    "authorSort": "MacLean, Alistair",
-    "year": "1957",
-    "series": "Navarone",
-    "seriesNo": "1",
-    "format": "Mass-market paperback",
-    "notes": "Second copy (paperback). Spine code M4089.",
-    "coverId": "5541270",
-    "summary": "A small team of commandos must scale an unclimbable Aegean cliff in World War II and destroy two huge German guns that doom twelve hundred stranded British soldiers.",
+    "coverId": "6409798",
     "added": "2026-10-31"
   },
   {
@@ -1674,8 +2321,22 @@
     "series": "Navarone",
     "seriesNo": "1",
     "format": "Hardcover",
-    "coverId": "5541270",
     "summary": "A small team of commandos must scale an unclimbable Aegean cliff in World War II and destroy two huge German guns that doom twelve hundred stranded British soldiers.",
+    "coverId": "5541270",
+    "added": "2026-10-31"
+  },
+  {
+    "id": "the-guns-of-navarone-2",
+    "title": "The Guns of Navarone",
+    "author": "Alistair MacLean",
+    "authorSort": "MacLean, Alistair",
+    "year": "1957",
+    "series": "Navarone",
+    "seriesNo": "1",
+    "format": "Mass-market paperback",
+    "notes": "Second copy (paperback). Spine code M4089.",
+    "summary": "A small team of commandos must scale an unclimbable Aegean cliff in World War II and destroy two huge German guns that doom twelve hundred stranded British soldiers.",
+    "coverId": "5541270",
     "added": "2026-10-31"
   },
   {
@@ -1686,8 +2347,8 @@
     "publisher": "Bantam",
     "year": "1965",
     "format": "Mass-market paperback",
-    "coverId": "369002",
     "summary": "Mike Shevlin returns to a boomtown to find out how the Quaker who raised him could have died in a gunfight, and uncovers a mining swindle.",
+    "coverId": "369002",
     "added": "2026-10-31"
   },
   {
@@ -1699,8 +2360,8 @@
     "year": "1979",
     "isbn": "0-553-24844-8",
     "format": "Mass-market paperback",
-    "coverId": "6518087",
     "summary": "Tom Shanaghy, a New York street brawler thrown off a train in Kansas, ends up wearing a marshal's badge in a frontier town and has to live up to it.",
+    "coverId": "6518087",
     "added": "2026-10-31"
   },
   {
@@ -1711,8 +2372,8 @@
     "publisher": "Collins",
     "year": "1959",
     "format": "Hardcover",
-    "coverId": "5596401",
     "summary": "A British agent goes behind the Iron Curtain in Hungary to rescue a captured scientist in MacLean's first spy thriller. Published in the US as The Secret Ways.",
+    "coverId": "5596401",
     "added": "2026-10-31"
   },
   {
@@ -1724,11 +2385,11 @@
     "year": "2003",
     "series": "Agent Cormac",
     "seriesNo": "2",
-    "notes": "Ex-library copy.",
     "readingGroup": "Polity",
     "readingOrder": "4",
-    "coverId": "198314",
+    "notes": "Ex-library copy.",
     "summary": "Agent Cormac investigates the destruction of a space station, tied to the alien Dragon, on and around Masada, a theocratic world about to fall under Polity control.",
+    "coverId": "198314",
     "added": "2026-10-31"
   },
   {
@@ -1740,9 +2401,37 @@
     "year": "1985",
     "format": "Hardcover",
     "notes": "Story collection.",
-    "coverId": "9549186",
     "summary": "A collection of MacLean's tales of the sea, mixing fiction and true accounts, including the story that launched his career and an account of the sinking of the Bismarck.",
+    "coverId": "9549186",
     "added": "2026-10-31"
+  },
+  {
+    "id": "the-mechanical",
+    "title": "The Mechanical",
+    "author": "Ian Tregillis",
+    "authorSort": "Tregillis, Ian",
+    "publisher": "Orbit",
+    "year": "2015",
+    "series": "The Alchemy Wars",
+    "seriesNo": "1",
+    "isbn": "9780316247993",
+    "format": "Ebook",
+    "summary": "In an alternate history, the Dutch rule the world with an army of clockwork servants called Clakkers. One of them, Jax, breaks free and goes on the run. First of The Alchemy Wars.",
+    "coverId": "9912888",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "the-postman",
+    "title": "The Postman",
+    "author": "David Brin",
+    "authorSort": "Brin, David",
+    "publisher": "Spectra",
+    "year": "1985",
+    "isbn": "9780307575012",
+    "format": "Ebook",
+    "summary": "A wanderer in a post-war America borrows a dead mail carrier's jacket for warmth, and the lie he tells to get fed starts to give people hope. Reluctantly, he becomes a symbol of a lost nation.",
+    "coverFile": "covers/the-postman.jpg",
+    "added": "2026-11-01"
   },
   {
     "id": "the-prefect",
@@ -1753,14 +2442,41 @@
     "year": "2007",
     "series": "Prefect Dreyfus",
     "seriesNo": "1",
+    "readingGroup": "Revelation Space universe",
+    "readingOrder": "5",
     "price": "$8.99",
     "format": "Mass-market paperback",
     "notes": "Later retitled Aurora Rising.",
-    "readingGroup": "Revelation Space universe",
-    "readingOrder": "5",
-    "coverId": "1286941",
     "summary": "Tom Dreyfus, a police officer of the Glitter Band, investigates the destruction of a habitat, and finds a plot that threatens its millions of citizens. Later retitled Aurora Rising.",
+    "coverId": "1286941",
     "added": "2026-10-31"
+  },
+  {
+    "id": "the-purple-cloud",
+    "title": "The Purple Cloud",
+    "author": "M. P. Shiel",
+    "authorSort": "Shiel, M. P.",
+    "publisher": "Project Gutenberg",
+    "year": "1901",
+    "format": "Ebook",
+    "summary": "Returning from the North Pole, Adam Jeffson discovers that a poisonous purple cloud has killed everyone on Earth. Alone, he slowly goes mad and burns the world's great cities. A 1901 classic.",
+    "coverId": "574739",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "the-remaining",
+    "title": "The Remaining",
+    "author": "D. J. Molles",
+    "authorSort": "Molles, D. J.",
+    "publisher": "Orbit",
+    "year": "2012",
+    "series": "The Remaining",
+    "seriesNo": "1",
+    "isbn": "9780316404136",
+    "format": "Ebook",
+    "summary": "Captain Lee Harden waits in a bunker as a plague strips most of humanity of everything but rage. When he comes out, he has a mission and a whole new world to survive. First of a series.",
+    "coverFile": "covers/the-remaining.jpg",
+    "added": "2026-11-01"
   },
   {
     "id": "the-rider-of-lost-creek",
@@ -1788,8 +2504,8 @@
     "publisher": "Vintage",
     "year": "2019",
     "format": "Trade paperback",
-    "coverId": "8798383",
     "summary": "College friends Wynn and Jack set out on a Canadian canoe trip, and a forest fire closes in behind them. A couple's quarrel overheard in the fog makes the river far more dangerous.",
+    "coverId": "8798383",
     "added": "2026-10-31"
   },
   {
@@ -1803,8 +2519,8 @@
     "isbn": "0-553-29539-X",
     "price": "$4.99",
     "format": "Mass-market paperback",
-    "coverId": "9607009",
     "summary": "Hopalong Cassidy heads into hard country on a mission that sets him against a gang of rustlers and a trap meant to end him.",
+    "coverId": "9607009",
     "added": "2026-10-31"
   },
   {
@@ -1818,8 +2534,79 @@
     "seriesNo": "3",
     "readingGroup": "Salvation Sequence",
     "readingOrder": "3",
-    "coverId": "10305043",
     "summary": "Earth is under siege, its people harvested by the Olyix. Survivors fight on, and the far-future war comes to its reckoning. The Salvation Sequence ends here.",
+    "coverId": "10305043",
+    "added": "2026-10-31"
+  },
+  {
+    "id": "the-scarlet-plague",
+    "title": "The Scarlet Plague",
+    "author": "Jack London",
+    "authorSort": "London, Jack",
+    "publisher": "Project Gutenberg",
+    "year": "1912",
+    "format": "Ebook",
+    "summary": "Decades after a plague wiped out civilization, an old man outside the ruins of San Francisco tells his savage grandsons what the world was once like. A short, influential 1912 classic.",
+    "coverId": "9377992",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "the-second-ship",
+    "title": "The Second Ship",
+    "author": "Richard Phillips",
+    "authorSort": "Phillips, Richard",
+    "publisher": "47North",
+    "year": "2009",
+    "series": "The Rho Agenda",
+    "seriesNo": "1",
+    "isbn": "9781612184937",
+    "format": "Ebook",
+    "summary": "Sixty years after an alien starship crashed in New Mexico, three teenagers find a second one, and soon realize the secret could cost them their lives. First of The Rho Agenda.",
+    "coverId": "12857657",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "the-seventh-day",
+    "title": "The Seventh Day",
+    "author": "Scott Shepherd",
+    "authorSort": "Shepherd, Scott",
+    "publisher": "47North",
+    "year": "2013",
+    "isbn": "9781477858745",
+    "format": "Ebook",
+    "summary": "Seven years after mysterious Strangers destroyed most of humanity, a man known as Joad is close to reaching home and the wife he prays is still alive.",
+    "coverId": "9039361",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "the-shockwave-rider",
+    "title": "The Shockwave Rider",
+    "author": "John Brunner",
+    "authorSort": "Brunner, John",
+    "publisher": "Open Road Media",
+    "year": "1975",
+    "isbn": "9781497617858",
+    "format": "Ebook",
+    "summary": "Nickie Haflinger, a fugitive who can rewrite his identity through the data networks, runs from the government in an overloaded future. A 1975 novel that anticipated computer worms and online life.",
+    "coverId": "211303",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "the-skinner",
+    "title": "The Skinner",
+    "author": "Neal Asher",
+    "authorSort": "Asher, Neal",
+    "publisher": "Tor",
+    "year": "2002",
+    "series": "Spatterjay",
+    "seriesNo": "1",
+    "readingGroup": "Polity",
+    "readingOrder": "13",
+    "isbn": "0-765-35048-3",
+    "price": "$7.99",
+    "format": "Mass-market paperback",
+    "summary": "Three travelers reach the ocean world of Spatterjay, where a virus makes humans nearly unkillable and everything bites, one of them a dead man with unfinished business. The start of the Spatterjay trilogy.",
+    "coverId": "10170408",
     "added": "2026-10-31"
   },
   {
@@ -1831,30 +2618,12 @@
     "year": "2002",
     "series": "Spatterjay",
     "seriesNo": "1",
+    "readingGroup": "Polity",
+    "readingOrder": "13",
     "format": "Trade paperback",
     "notes": "Second copy.",
-    "readingGroup": "Polity",
-    "readingOrder": "10",
+    "summary": "Three travelers reach the ocean world of Spatterjay, where a virus makes humans nearly unkillable and everything bites, one of them a dead man with unfinished business. The start of the Spatterjay trilogy.",
     "coverId": "524263",
-    "summary": "Three travelers reach the ocean world of Spatterjay, where a virus makes humans nearly unkillable and everything bites, one of them a dead man with unfinished business. The start of the Spatterjay trilogy.",
-    "added": "2026-10-31"
-  },
-  {
-    "id": "the-skinner",
-    "title": "The Skinner",
-    "author": "Neal Asher",
-    "authorSort": "Asher, Neal",
-    "publisher": "Tor",
-    "year": "2002",
-    "series": "Spatterjay",
-    "seriesNo": "1",
-    "isbn": "0-765-35048-3",
-    "price": "$7.99",
-    "format": "Mass-market paperback",
-    "readingGroup": "Polity",
-    "readingOrder": "10",
-    "coverId": "10170408",
-    "summary": "Three travelers reach the ocean world of Spatterjay, where a virus makes humans nearly unkillable and everything bites, one of them a dead man with unfinished business. The start of the Spatterjay trilogy.",
     "added": "2026-10-31"
   },
   {
@@ -1866,11 +2635,11 @@
     "year": "1967",
     "series": "The Sacketts",
     "seriesNo": "17",
-    "format": "Mass-market paperback",
     "readingGroup": "The Sacketts",
     "readingOrder": "5",
-    "coverId": "368962",
+    "format": "Mass-market paperback",
     "summary": "Flagan and Galloway Sackett, heading west from Tennessee, agree to escort a girl to her father in Colorado, and end up in the middle of a family feud.",
+    "coverId": "368962",
     "added": "2026-10-31"
   },
   {
@@ -1883,10 +2652,53 @@
     "series": "Rise of the Jain",
     "seriesNo": "1",
     "readingGroup": "Polity",
-    "readingOrder": "9",
-    "coverId": "8600462",
+    "readingOrder": "12",
     "summary": "Orlandine guards an accretion disc full of dangerous Jain technology alongside the alien Dragon, until a threat emerges that could set off a catastrophe. First of the Rise of the Jain.",
+    "coverId": "8600462",
     "added": "2026-10-31"
+  },
+  {
+    "id": "the-songs-of-distant-earth",
+    "title": "The Songs of Distant Earth",
+    "author": "Arthur C. Clarke",
+    "authorSort": "Clarke, Arthur C.",
+    "publisher": "RosettaBooks",
+    "year": "1986",
+    "isbn": "9780795325854",
+    "format": "Ebook",
+    "summary": "Millennia after the Sun's destruction, a starship carrying some of Earth's last survivors stops at the peaceful ocean world of Thalassa, unsettling the human colony already living there.",
+    "coverId": "382269",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "the-stainless-steel-rat",
+    "title": "The Stainless Steel Rat",
+    "author": "Harry Harrison",
+    "authorSort": "Harrison, Harry",
+    "publisher": "Project Gutenberg",
+    "year": "1961",
+    "series": "The Stainless Steel Rat",
+    "seriesNo": "1",
+    "format": "Ebook",
+    "summary": "Slippery Jim diGriz, the best crook in the galaxy, is caught and recruited by the Special Corps, the agency that hunts criminals like him. The fast, funny first book of the series.",
+    "coverId": "911011",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "the-technician",
+    "title": "The Technician",
+    "author": "Neal Asher",
+    "authorSort": "Asher, Neal",
+    "publisher": "Night Shade Books",
+    "year": "2010",
+    "series": "Polity",
+    "readingGroup": "Polity",
+    "readingOrder": "8",
+    "isbn": "9781597805216",
+    "format": "Ebook",
+    "summary": "Twenty years after the Polity took Masada, rebels still hunt the surviving theocrats. A fugitive former priest is pursued by them, and by something much stranger: the alien hooder known as the Technician, whose ancient behavior may hold a secret.",
+    "coverId": "8626261",
+    "added": "2026-11-01"
   },
   {
     "id": "the-temporal-void",
@@ -1897,11 +2709,11 @@
     "year": "2008",
     "series": "Void Trilogy",
     "seriesNo": "2",
-    "format": "Mass-market paperback",
     "readingGroup": "Commonwealth universe",
     "readingOrder": "4",
-    "coverId": "6275892",
+    "format": "Mass-market paperback",
     "summary": "As Inigo's dreams drive the Living Dream movement toward the Void, Edeard's story deepens within it, and the Commonwealth edges toward a crisis. Second in the Void Trilogy.",
+    "coverId": "6275892",
     "added": "2026-10-31"
   },
   {
@@ -1913,8 +2725,8 @@
     "year": "1951",
     "series": "Hopalong Cassidy",
     "format": "Mass-market paperback",
-    "coverId": "371949",
     "summary": "Hopalong Cassidy finds two men on a rainy trail, one dead and the other soon murdered, and rides into the lawless town of Seven Pines to find out why.",
+    "coverId": "371949",
     "added": "2026-10-31"
   },
   {
@@ -1927,10 +2739,23 @@
     "series": "Spatterjay",
     "seriesNo": "2",
     "readingGroup": "Polity",
-    "readingOrder": "11",
-    "coverId": "754207",
+    "readingOrder": "14",
     "summary": "A sailing ship built to carry the risen dead sets out on Spatterjay's deadly sea, as an ancient threat stirs beneath the waves. Second in the Spatterjay trilogy.",
+    "coverId": "754207",
     "added": "2026-10-31"
+  },
+  {
+    "id": "the-walk",
+    "title": "The Walk",
+    "author": "Lee Goldberg",
+    "authorSort": "Goldberg, Lee",
+    "publisher": "Cutting Edge",
+    "year": "2004",
+    "isbn": "9781453728987",
+    "format": "Ebook",
+    "summary": "After a huge earthquake flattens Los Angeles, a TV executive sets off on foot through the ruins to get home to his family in the Valley, and finds out what he's capable of.",
+    "coverFile": "covers/the-walk.jpg",
+    "added": "2026-11-01"
   },
   {
     "id": "the-walking-drum",
@@ -1940,9 +2765,22 @@
     "publisher": "Bantam",
     "year": "1984",
     "format": "Trade paperback",
-    "coverId": "9330269",
     "summary": "In the twelfth century, young warrior and scholar Kerbouchard sets out across Europe, Arabia and the Silk Road to find and free his father. L'Amour's great historical adventure.",
+    "coverId": "9330269",
     "added": "2026-10-31"
+  },
+  {
+    "id": "the-wasteland-saga",
+    "title": "The Wasteland Saga",
+    "author": "Nick Cole",
+    "authorSort": "Cole, Nick",
+    "publisher": "Harper Voyager",
+    "year": "2013",
+    "isbn": "9780062210203",
+    "format": "Ebook",
+    "summary": "Forty years after nuclear war, a young scavenger and her grandfather salvage the ruins of America, until she has to set off alone. All three Wasteland novels in one volume.",
+    "coverId": "10639583",
+    "added": "2026-11-01"
   },
   {
     "id": "the-way-to-dusty-death",
@@ -1952,8 +2790,8 @@
     "publisher": "Doubleday",
     "year": "1973",
     "format": "Hardcover",
-    "coverId": "6412707",
     "summary": "A top Grand Prix driver seems to have lost his nerve after a fatal crash, and takes to the bottle. Not everything is what it appears, and the racing world hides a criminal scheme.",
+    "coverId": "6412707",
     "added": "2026-10-31"
   },
   {
@@ -1965,12 +2803,25 @@
     "year": "2009",
     "series": "MaddAddam",
     "seriesNo": "2",
-    "format": "Trade paperback",
     "readingGroup": "MaddAddam",
     "readingOrder": "2",
-    "coverId": "12816870",
+    "format": "Trade paperback",
     "summary": "Two women of the God's Gardeners, a green religious sect, survive the pandemic that destroys the world, Toby in a spa and Ren in a sex club. It runs alongside Oryx and Crake.",
+    "coverId": "12816870",
     "added": "2026-10-31"
+  },
+  {
+    "id": "things-fall-down",
+    "title": "Things Fall Down",
+    "author": "Keith Taylor",
+    "authorSort": "Taylor, Keith",
+    "year": "2018",
+    "series": "Jack Archer",
+    "seriesNo": "1",
+    "format": "Ebook",
+    "summary": "A disgraced doctor about to fly out of Seattle gets a strange warning from a hospital in San Francisco, and finds himself at the start of a catastrophe with no way home.",
+    "coverFile": "covers/things-fall-down.jpg",
+    "added": "2026-11-01"
   },
   {
     "id": "time-storm",
@@ -1982,8 +2833,8 @@
     "isbn": "0-671-72148-8",
     "price": "$4.99",
     "format": "Mass-market paperback",
-    "coverId": "407673",
     "summary": "Waves of time scramble the Earth into a patchwork of different eras. A man, a young woman and a leopard cross the wreckage and try to work out how to stop it.",
+    "coverId": "407673",
     "added": "2026-10-31"
   },
   {
@@ -1994,8 +2845,8 @@
     "publisher": "Bantam",
     "year": "1955",
     "format": "Mass-market paperback",
-    "coverId": "4691308",
     "summary": "Orphaned at twelve, Rye Tyler is taken in by a mysterious gunman who teaches him to read and to survive. Forced to move on after a killing, he has to choose what kind of man to be.",
+    "coverId": "4691308",
     "added": "2026-10-31"
   },
   {
@@ -2007,12 +2858,40 @@
     "year": "1976",
     "series": "The Sacketts",
     "seriesNo": "2",
-    "format": "Mass-market paperback",
     "readingGroup": "The Sacketts",
     "readingOrder": "7",
-    "coverId": "368963",
+    "format": "Mass-market paperback",
     "summary": "Barnabas Sackett returns to England for his bride and is jailed, escapes, then takes his family deep into the American wilderness beyond the Blue Ridge.",
+    "coverId": "368963",
     "added": "2026-10-31"
+  },
+  {
+    "id": "tomorrow-war",
+    "title": "Tomorrow War: The Chronicles of Max [Redacted]",
+    "author": "J. L. Bourne",
+    "authorSort": "Bourne, J. L.",
+    "publisher": "Simon & Schuster",
+    "year": "2016",
+    "series": "Tomorrow War",
+    "seriesNo": "1",
+    "isbn": "9781451629156",
+    "format": "Ebook",
+    "summary": "A covert operation in Syria sets off a chain of events that plunges the United States into chaos. Told through the secret journals of a government operative trying to survive the collapse.",
+    "coverId": "8444417",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "tool-of-the-trade",
+    "title": "Tool of the Trade",
+    "author": "Joe Haldeman",
+    "authorSort": "Haldeman, Joe",
+    "publisher": "Open Road Media",
+    "year": "1987",
+    "isbn": "9781497695573",
+    "format": "Ebook",
+    "summary": "A Soviet sleeper agent who has become an American professor invents a device that can compel anyone to obey him, and finds himself hunted by both superpowers.",
+    "coverId": "6570467",
+    "added": "2026-11-01"
   },
   {
     "id": "tucker",
@@ -2023,8 +2902,52 @@
     "year": "1971",
     "price": "$3.99",
     "format": "Mass-market paperback",
-    "coverId": "4852736",
     "summary": "Told by his dying father to get back what was stolen, young Shell Tucker hunts three men across the West, two of them his friends. He grows up fast.",
+    "coverId": "4852736",
+    "added": "2026-10-31"
+  },
+  {
+    "id": "ubik",
+    "title": "Ubik",
+    "author": "Philip K. Dick",
+    "authorSort": "Dick, Philip K.",
+    "publisher": "Mariner Books",
+    "year": "1969",
+    "isbn": "9780547572291",
+    "format": "Ebook",
+    "summary": "After an explosion on the Moon, a team of anti-psychics finds reality decaying around them, and only a mysterious spray-can product called Ubik seems able to stop it.",
+    "coverId": "14814765",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "valis",
+    "title": "VALIS",
+    "author": "Philip K. Dick",
+    "authorSort": "Dick, Philip K.",
+    "publisher": "Mariner Books",
+    "year": "1981",
+    "series": "VALIS Trilogy",
+    "seriesNo": "1",
+    "isbn": "9780547601342",
+    "format": "Ebook",
+    "summary": "After a vision of pink light, Horselover Fat believes he has received divine knowledge, and sets out with his friend Phil, a science fiction writer, to find out if it's God, aliens or madness.",
+    "coverId": "9251944",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "war-factory",
+    "title": "War Factory",
+    "author": "Neal Asher",
+    "authorSort": "Asher, Neal",
+    "publisher": "Night Shade Books",
+    "year": "2016",
+    "series": "Transformation",
+    "seriesNo": "2",
+    "readingGroup": "Polity",
+    "readingOrder": "10",
+    "format": "Hardcover",
+    "summary": "Thorvald Spear keeps pursuing Penny Royal while a vengeful prador and a rebuilt killer seek their own ends, leading to a dangerous place and the secret behind it. Second in the Transformation trilogy.",
+    "coverId": "7893809",
     "added": "2026-10-31"
   },
   {
@@ -2036,29 +2959,25 @@
     "year": "2016",
     "series": "Transformation",
     "seriesNo": "2",
+    "readingGroup": "Polity",
+    "readingOrder": "10",
     "format": "Paperback",
     "notes": "Second copy (paperback).",
-    "readingGroup": "Polity",
-    "readingOrder": "7",
-    "coverId": "7893809",
     "summary": "Thorvald Spear keeps pursuing Penny Royal while a vengeful prador and a rebuilt killer seek their own ends, leading to a dangerous place and the secret behind it. Second in the Transformation trilogy.",
+    "coverId": "7893809",
     "added": "2026-10-31"
   },
   {
-    "id": "war-factory",
-    "title": "War Factory",
-    "author": "Neal Asher",
-    "authorSort": "Asher, Neal",
-    "publisher": "Night Shade Books",
-    "year": "2016",
-    "series": "Transformation",
-    "seriesNo": "2",
-    "format": "Hardcover",
-    "readingGroup": "Polity",
-    "readingOrder": "7",
-    "coverId": "7893809",
-    "summary": "Thorvald Spear keeps pursuing Penny Royal while a vengeful prador and a rebuilt killer seek their own ends, leading to a dangerous place and the secret behind it. Second in the Transformation trilogy.",
-    "added": "2026-10-31"
+    "id": "we",
+    "title": "We",
+    "author": "Yevgeny Zamyatin",
+    "authorSort": "Zamyatin, Yevgeny",
+    "publisher": "Project Gutenberg",
+    "year": "1924",
+    "format": "Ebook",
+    "summary": "In the glass-walled One State of the far future, people have numbers instead of names, and a loyal engineer's love for a rebel shakes everything. The Russian novel that inspired Nineteen Eighty-Four.",
+    "coverFile": "covers/we.jpg",
+    "added": "2026-11-01"
   },
   {
     "id": "weaponized",
@@ -2068,14 +2987,14 @@
     "publisher": "Tor UK (Pan Macmillan)",
     "year": "2023",
     "series": "Polity",
+    "readingGroup": "Polity",
+    "readingOrder": "1",
     "isbn": "978-1-5290-5005-9",
     "price": "£9.99",
     "format": "Trade paperback",
     "notes": "Paperback edition published Feb 2023.",
-    "readingGroup": "Polity",
-    "readingOrder": "1",
-    "coverId": "15250409",
     "summary": "Ursula, a Polity veteran seeking a simpler life, founds a colony on the hostile planet Threpsis. When war reaches it, she finds herself at the center of the fight.",
+    "coverId": "15250409",
     "added": "2026-10-31"
   },
   {
@@ -2087,8 +3006,8 @@
     "year": "1996",
     "format": "Mass-market paperback",
     "notes": "Story collection.",
-    "coverId": "3851029",
     "summary": "A collection of L'Amour's short Western stories, gathering tales of gunfighters, lawmen and drifters.",
+    "coverId": "3851029",
     "added": "2026-10-31"
   },
   {
@@ -2100,25 +3019,13 @@
     "year": "1981",
     "series": "To the Stars",
     "seriesNo": "2",
+    "readingGroup": "To the Stars",
+    "readingOrder": "2",
     "isbn": "0-553-14339-5",
     "price": "$2.25",
     "format": "Mass-market paperback",
-    "readingGroup": "To the Stars",
-    "readingOrder": "2",
-    "coverId": "6759008",
     "summary": "Jan Kulozik, exiled to the hostile farming planet Halvmork, must help its people survive the world's deadly seasons by leading a mass migration. Second in the To the Stars trilogy.",
-    "added": "2026-10-31"
-  },
-  {
-    "id": "when-eight-bells-toll-2",
-    "title": "When Eight Bells Toll",
-    "author": "Alistair MacLean",
-    "authorSort": "MacLean, Alistair",
-    "year": "1966",
-    "format": "Mass-market paperback",
-    "notes": "Second copy (paperback).",
-    "coverId": "15205463",
-    "summary": "British agent Philip Calvert goes after pirates hijacking gold bullion ships, and his trail ends among the remote Scottish islands, among people who will kill to protect a secret.",
+    "coverId": "6759008",
     "added": "2026-10-31"
   },
   {
@@ -2129,8 +3036,20 @@
     "publisher": "Doubleday",
     "year": "1966",
     "format": "Hardcover",
-    "coverId": "15205463",
     "summary": "British agent Philip Calvert goes after pirates hijacking gold bullion ships, and his trail ends among the remote Scottish islands, among people who will kill to protect a secret.",
+    "coverId": "15205463",
+    "added": "2026-10-31"
+  },
+  {
+    "id": "when-eight-bells-toll-2",
+    "title": "When Eight Bells Toll",
+    "author": "Alistair MacLean",
+    "authorSort": "MacLean, Alistair",
+    "year": "1966",
+    "format": "Mass-market paperback",
+    "notes": "Second copy (paperback).",
+    "summary": "British agent Philip Calvert goes after pirates hijacking gold bullion ships, and his trail ends among the remote Scottish islands, among people who will kill to protect a secret.",
+    "coverId": "15205463",
     "added": "2026-10-31"
   },
   {
@@ -2141,8 +3060,8 @@
     "publisher": "Bantam",
     "year": "1976",
     "format": "Mass-market paperback",
-    "coverId": "369067",
     "summary": "A drifter called Bob Rock tries to put down roots on a piece of disputed land, and has to fight for it, and for the woman he has come to love.",
+    "coverId": "369067",
     "added": "2026-10-31"
   },
   {
@@ -2153,8 +3072,8 @@
     "publisher": "Norton",
     "year": "1966",
     "format": "Trade paperback",
-    "coverId": "9269373",
     "summary": "Rhys imagines the early life of Rochester's mad wife from Jane Eyre: Antoinette, a Creole heiress in post-slavery Jamaica, and her doomed marriage.",
+    "coverId": "9269373",
     "added": "2026-10-31"
   },
   {
@@ -2166,14 +3085,29 @@
     "year": "2024",
     "series": "The Owner",
     "seriesNo": "4",
+    "readingGroup": "The Owner",
+    "readingOrder": "4",
     "isbn": "978-1-64506-088-8",
     "price": "$24.95",
     "format": "Trade paperback",
-    "readingGroup": "The Owner",
-    "readingOrder": "4",
-    "coverId": "15182435",
     "summary": "Ottanger, a mutant on an Earth ruled by the Committee, finds he can reach alternate worlds and flee his timeline. He discovers the multiverse is just as dangerous. Set in the world of the Owner books.",
+    "coverId": "15182435",
     "added": "2026-10-31"
+  },
+  {
+    "id": "zero-day",
+    "title": "Zero Day",
+    "author": "Mark Russinovich",
+    "authorSort": "Russinovich, Mark",
+    "publisher": "Thomas Dunne Books",
+    "year": "2011",
+    "series": "Jeff Aiken",
+    "seriesNo": "1",
+    "isbn": "9781429968041",
+    "format": "Ebook",
+    "summary": "An airliner's controls fail, a tanker runs aground and hospital systems turn deadly. Cyber-security expert Jeff Aiken races to uncover a worldwide attack. Written by a Microsoft engineer.",
+    "coverId": "9593872",
+    "added": "2026-11-01"
   },
   {
     "id": "zero-point",
@@ -2186,8 +3120,8 @@
     "seriesNo": "2",
     "readingGroup": "The Owner",
     "readingOrder": "2",
-    "coverId": "9417174",
     "summary": "With the Committee's control in ruins, Alan Saul and his station face a new tyrant, Serene Galahad, who rises from the wreckage and turns on Earth. Second of the Owner trilogy.",
+    "coverId": "9417174",
     "added": "2026-10-31"
   }
 ]
