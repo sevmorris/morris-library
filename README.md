@@ -30,6 +30,7 @@ All values are strings. `id`, `title`, `author` and `added` are required.
 | `coverFile` | Path to a cover hosted in `docs/covers/`, cropped from a photo of the book or taken from Calibre. Used in place of `coverId` |
 | `coverId` | Open Library cover id. The page loads the image from `covers.openlibrary.org/b/id/<coverId>-M.jpg`, and shows a blank block without one |
 | `added` | Date catalogued, as `YYYY-MM-DD` |
+| `read` | Set once the book has been read, to `yes` or to the year or date it was finished. Shows a small check on the cover; a year or date also appears in the drop-down. Leave it out for an unread book |
 
 ## Licence
 

@@ -69,7 +69,11 @@ h1 span{display:block;font-weight:500;font-size:.42em;line-height:1.2;letter-spa
 
 .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(176px,1fr));gap:22px 18px;padding-top:14px;align-items:start}
 .row{display:flex;flex-direction:column;gap:2px;min-width:0}
-.cover{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;margin-bottom:6px;border-radius:3px;background:var(--surface);box-shadow:0 0 0 1px var(--rule)}
+.cv{position:relative;margin-bottom:6px}
+.cover{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;border-radius:3px;background:var(--surface);box-shadow:0 0 0 1px var(--rule)}
+/* A book that has been read carries a small check in its cover's corner. */
+.read{position:absolute;right:clamp(4px,1.2vw,6px);bottom:clamp(4px,1.2vw,6px);display:grid;place-items:center;width:clamp(16px,4.6vw,22px);aspect-ratio:1;border-radius:50%;background:var(--accent);color:var(--bg);box-shadow:0 0 0 1.5px var(--bg),0 1px 3px rgb(0 0 0/.35)}
+.read svg{width:62%;height:62%}
 .row h3{font-family:var(--f-display);font-weight:600;font-size:19px;line-height:1.15;margin:0;min-width:0}
 .row .yr{font-family:var(--f-mono);font-size:12px;font-variant-numeric:tabular-nums}
 .row .m{font-size:13px;color:var(--muted)}
@@ -95,8 +99,8 @@ h1 span{display:block;font-weight:500;font-size:.42em;line-height:1.2;letter-spa
   .group.short:has(.more[open]){grid-column:1/-1}
   .group.short:has(.more[open]) .tiles{grid-template-columns:repeat(4,minmax(0,1fr))}
   .row:has(.more[open]){--gap:clamp(8px,2.4vw,18px);grid-column:1/-1;display:grid;grid-template-columns:calc((100% - 3*var(--gap))/4) minmax(0,1fr);grid-template-rows:auto auto 1fr;gap:2px var(--gap)}
-  .row:has(.more[open])>.cover{grid-row:1/span 3}
-  .row:has(.more[open])>:not(.cover){grid-column:2}
+  .row:has(.more[open])>.cv{grid-row:1/span 3;align-self:start}
+  .row:has(.more[open])>:not(.cv){grid-column:2}
 }
 @media (min-width:760px){
   .bar{grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:16px}
@@ -159,6 +163,8 @@ footer a{color:inherit}
   function decade(y){ const n = parseInt(y,10); return isNaN(n) ? "Undated" : (Math.floor(n/10)*10)+"s"; }
   function plural(n,word){ return `${n} ${word}${n===1?"":"s"}`; }
   const isSecondCopy = b => /second copy/i.test(b.notes||"");
+  // "read" is "yes", or the year or date the book was finished.
+  const readLabel = b => /^\d{4}/.test(b.read) ? `Read ${b.read}` : "Read";
 
   // The set a book sits under in Author view. A series with only one title owned isn't worth a heading of its own.
   function setOf(b){
@@ -210,6 +216,7 @@ footer a{color:inherit}
     if (groupKey!=="publisher" && b.publisher) facts.push(esc(b.publisher));
     if (b.format && b.format!=="Ebook") facts.push(esc(b.format.replace(/ paperback$/i,"")));
     if (b.notes && !award) facts.push(esc(b.notes));
+    if (/^\d{4}/.test(b.read)) facts.push(esc(readLabel(b)));
     if (!b.summary && !facts.length) return "";
     return `<details class="more"><summary>Summary</summary>${b.summary?`<p>${esc(b.summary)}</p>`:""}${facts.length?`<p class="facts">${facts.join(" · ")}</p>`:""}</details>`;
   }
@@ -249,7 +256,8 @@ footer a{color:inherit}
           const cover = coverSrc
             ? `<img class="cover" src="${coverSrc}" width="176" height="264" loading="lazy" decoding="async" alt="">`
             : `<span class="cover"></span>`;
-          return `${setHead}<article class="row">${cover}
+          const read = b.read ? `<span class="read" role="img" aria-label="${esc(readLabel(b))}" title="${esc(readLabel(b))}"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>` : "";
+          return `${setHead}<article class="row"><div class="cv">${cover}${read}</div>
             <h3>${groupKey==="author"&&b.readingOrder?`<span class="step">${esc(b.readingOrder)}.</span> `:""}${esc(b.title)}</h3>
             <div class="m">${rowMeta(b)}</div>
             ${rowMore(b)}</article>`;
