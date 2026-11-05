@@ -30,7 +30,21 @@ All values are strings. `id`, `title`, `author` and `added` are required.
 | `coverFile` | Path to a cover hosted in `docs/covers/`, cropped from a photo of the book or taken from Calibre. Used in place of `coverId` |
 | `coverId` | Open Library cover id. The page loads the image from `covers.openlibrary.org/b/id/<coverId>-M.jpg`, and shows a blank block without one |
 | `added` | Date catalogued, as `YYYY-MM-DD` |
-| `read` | Set once the book has been read, to `yes` or to the year or date it was finished. Shows a small check on the cover; a year or date also appears in the drop-down. Leave it out for an unread book |
+
+## Read marks
+
+A book that has been read shows a small check in its cover's corner. The marks are kept
+apart from the catalog, in `docs/read.json`: a sorted list of book ids.
+
+They are ticked on the page itself. **Mark books as read**, at the foot of the page,
+asks for a GitHub token, after which every cover has a box in its corner. Each tick
+commits `read.json` to `main` through GitHub's API, and the site republishes about a
+minute later. Each tick is a Pages deployment too, which `prune-deployments` clears.
+
+The token needs only this repository, with **Contents: Read and write**; the dialog's
+link opens GitHub's form with that filled in, apart from choosing the repository. It is
+kept in the browser's local storage, which every `sevmorris.github.io` site shares, and
+sent only to `api.github.com`. **Stop** removes it from that device.
 
 ## Licence
 
