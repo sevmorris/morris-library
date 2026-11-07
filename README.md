@@ -31,6 +31,13 @@ All values are strings. `id`, `title`, `author` and `added` are required.
 | `coverId` | Open Library cover id. The page loads the image from `covers.openlibrary.org/b/id/<coverId>-M.jpg`, and shows a blank block without one |
 | `added` | Date catalogued, as `YYYY-MM-DD` |
 
+## List view and download
+
+**List**, under the heading, shows one plain line per book instead of covers, and the
+choice is remembered on that device. **Download list** saves the whole catalog as a text
+file, by author, with copies, ebooks and read books marked, so it can be kept on a phone
+and read offline.
+
 ## Read marks
 
 A book that has been read shows a small check in its cover's corner. The marks are kept
