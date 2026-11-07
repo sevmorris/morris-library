@@ -1473,6 +1473,20 @@
     "added": "2026-10-31"
   },
   {
+    "id": "philip-k-dicks-electric-dreams",
+    "title": "Philip K. Dick's Electric Dreams",
+    "author": "Philip K. Dick",
+    "authorSort": "Dick, Philip K.",
+    "publisher": "Houghton Mifflin Harcourt",
+    "year": "2017",
+    "isbn": "9781328995094",
+    "format": "Ebook",
+    "notes": "Story collection.",
+    "summary": "Ten of Dick's short stories chosen for the 2017 TV series, each introduced by the writer who adapted it, including Autofac, The Hood Maker, The Father-Thing, Foster, You're Dead and The Hanging Stranger.",
+    "coverId": "9214617",
+    "added": "2026-11-07"
+  },
+  {
     "id": "planet-of-the-damned",
     "title": "Planet of the Damned",
     "author": "Harry Harrison",
@@ -2417,7 +2431,7 @@
     "isbn": "9780316247993",
     "format": "Ebook",
     "summary": "In an alternate history, the Dutch rule the world with an army of clockwork servants called Clakkers. One of them, Jax, breaks free and goes on the run. First of The Alchemy Wars.",
-    "coverId": "9912888",
+    "coverId": "10579438",
     "added": "2026-11-01"
   },
   {
@@ -2933,6 +2947,19 @@
     "summary": "After a vision of pink light, Horselover Fat believes he has received divine knowledge, and sets out with his friend Phil, a science fiction writer, to find out if it's God, aliens or madness.",
     "coverId": "9251944",
     "added": "2026-11-01"
+  },
+  {
+    "id": "wake-of-war",
+    "title": "Wake of War",
+    "author": "Zac Topping",
+    "authorSort": "Topping, Zac",
+    "publisher": "Forge",
+    "year": "2022",
+    "isbn": "9781250814982",
+    "format": "Ebook",
+    "summary": "In 2037 the United States has collapsed into a second civil war. Told in turns by two men caught up in the fighting, it builds toward a battle for Salt Lake City. A debut by an Iraq War veteran.",
+    "coverId": "14799214",
+    "added": "2026-11-07"
   },
   {
     "id": "war-factory",
