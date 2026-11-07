@@ -37,6 +37,12 @@ h1{font-family:var(--f-display);font-weight:700;font-size:clamp(44px,10vw,72px);
 h1 span{display:block;font-weight:500;font-size:.42em;line-height:1.2;letter-spacing:.06em;color:var(--accent)}
 .tally{color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
 .tally b{color:var(--fg);font-weight:600}
+.tools{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;margin-top:4px;font-size:14px}
+.toggle{display:inline-flex;gap:2px;padding:2px;border:1px solid var(--rule);border-radius:7px}
+.toggle button{font:500 14px var(--f-body);min-height:32px;padding:2px 12px;border:0;border-radius:5px;background:none;color:var(--muted);cursor:pointer}
+.toggle button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+.toggle button:focus-visible,#download:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#download{color:var(--accent);font-weight:600}
 
 .bar{position:sticky;top:0;z-index:2;display:grid;gap:8px;padding-block:10px;background:var(--bg);border-bottom:1px solid var(--rule)}
 .search{width:100%;min-width:0;font:inherit;font-size:16px;padding:9px 12px;border:1px solid var(--rule);border-radius:6px;background:var(--surface);color:var(--fg)}
@@ -144,6 +150,17 @@ dialog :focus-visible,.link:focus-visible{outline:2px solid var(--accent);outlin
 .toast{position:fixed;z-index:5;left:50%;bottom:max(16px,env(safe-area-inset-bottom,0px));transform:translateX(-50%);width:max-content;max-width:calc(100% - 32px);padding:8px 14px;border-radius:6px;background:var(--fg);color:var(--bg);font-size:14px;box-shadow:0 2px 10px rgb(0 0 0/.3)}
 .toast:empty{display:none}
 
+/* List view: one plain line per book, for checking what is on the shelf at a glance. */
+.listmode #list{display:block}
+.listmode .group{margin-top:20px}
+.listmode .tiles{display:block;padding-top:2px}
+.listmode .set{margin:12px 0 0}
+.line{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:0 12px;padding:6px 0;border-bottom:1px solid var(--rule)}
+.line .lt{font-weight:600}
+.line .lm{color:var(--muted);font-size:13.5px}
+.line .lm>span:not(:last-child)::after{content:" · "}
+.line .done{color:var(--accent);font-weight:700}
+
 .state{padding:40px 8px;text-align:center;color:var(--muted)}
 .state strong{display:block;font-family:var(--f-display);font-size:24px;color:var(--fg);text-transform:uppercase;margin-bottom:6px}
 </style>
@@ -153,6 +170,13 @@ dialog :focus-visible,.link:focus-visible{outline:2px solid var(--accent);outlin
   <header>
     <h1>Seven’s Library <span>A Selection</span></h1>
     <div class="tally" id="tally" role="status">Loading the catalog…</div>
+    <div class="tools">
+      <div class="toggle" role="group" aria-label="Show books as">
+        <button type="button" data-v="tiles" aria-pressed="true">Covers</button>
+        <button type="button" data-v="list" aria-pressed="false">List</button>
+      </div>
+      <button type="button" class="link" id="download">Download list</button>
+    </div>
   </header>
 
   <div class="bar" id="bar">
@@ -194,7 +218,8 @@ dialog :focus-visible,.link:focus-visible{outline:2px solid var(--accent);outlin
 <script>
 (function(){
   const $ = s => document.querySelector(s);
-  let books = [], groupKey = "author", query = "";
+  let books = [], groupKey = "author", query = "", view = "tiles";
+  try { if (localStorage.getItem("ml-view")==="list") view = "list"; } catch(e) {}
   // The ids of books that have been read, from docs/read.json. A device with a token in "ml-token" can change them.
   let readIds = new Set(), token = "";
   try { token = localStorage.getItem("ml-token") || ""; } catch(e) {}
@@ -299,6 +324,7 @@ dialog :focus-visible,.link:focus-visible{outline:2px solid var(--accent);outlin
             prevSet = setOf(b);
             setHead = `<p class="set"><span>${esc(prevSet||"Other books")}</span><span class="count">${items.filter(x => setOf(x)===prevSet).length}</span></p>`;
           }
+          if (view==="list") return setHead + listLine(b);
           const coverSrc = b.coverFile ? esc(b.coverFile) : b.coverId ? `https://covers.openlibrary.org/b/id/${esc(b.coverId)}-M.jpg` : "";
           const cover = coverSrc
             ? `<img class="cover" src="${coverSrc}" width="176" height="264" loading="lazy" decoding="async" alt="">`
@@ -310,6 +336,58 @@ dialog :focus-visible,.link:focus-visible{outline:2px solid var(--accent);outlin
         }).join("") + `</div></section>`;
     }).join("");
   }
+
+  function listLine(b){
+    const meta = [];
+    if (groupKey!=="author") meta.push(`<span>${esc(b.author)}</span>`);
+    if (b.year) meta.push(`<span>${esc(b.year)}</span>`);
+    if (b.format==="Ebook") meta.push("<span>Ebook</span>");
+    if (readIds.has(b.id)) meta.push(`<span class="done" title="Read">✓ Read</span>`);
+    return `<div class="line"><span class="lt">${groupKey==="author"&&b.readingOrder?`${esc(b.readingOrder)}. `:""}${esc(b.title)}</span><span class="lm">${meta.join("")}</span></div>`;
+  }
+
+  // The whole catalog as plain text, by author, so it can be kept on a phone and read without a connection.
+  function listText(){
+    const byAuthor = new Map();
+    for (const b of [...books].sort((a,b) => sortAuthor(a).localeCompare(sortAuthor(b)) || sortTitle(a.title).localeCompare(sortTitle(b.title)))){
+      const head = authorHead(b);
+      if (!byAuthor.has(head)) byAuthor.set(head, new Map());
+      const titles = byAuthor.get(head);
+      const t = titles.get(b.title) || { year:b.year, copies:0, ebook:false, read:false };
+      t.copies++; t.ebook = t.ebook || b.format==="Ebook"; t.read = t.read || readIds.has(b.id);
+      titles.set(b.title, t);
+    }
+    const date = new Date().toLocaleDateString("en-GB", { day:"numeric", month:"long", year:"numeric" });
+    const lines = ["Seven’s Library: A Selection", `${plural(books.length,"book")}, as of ${date}`, ""];
+    for (const [head, titles] of byAuthor){
+      lines.push(head.toUpperCase());
+      for (const [title, t] of titles){
+        const notes = [t.copies>1 && `${t.copies} copies`, t.ebook && "ebook", t.read && "read"].filter(Boolean);
+        lines.push(`- ${title}${t.year?` (${t.year})`:""}${notes.length?` [${notes.join(", ")}]`:""}`);
+      }
+      lines.push("");
+    }
+    return lines.join("\n");
+  }
+  function downloadList(){
+    const blob = new Blob(["\ufeff"+listText()], { type:"text/plain;charset=utf-8" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `sevens-library-${new Date().toISOString().slice(0,10)}.txt`;
+    document.body.append(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 10000);
+  }
+
+  function syncView(){
+    document.body.classList.toggle("listmode", view==="list");
+    document.querySelectorAll(".toggle button").forEach(btn => btn.setAttribute("aria-pressed", String(btn.dataset.v===view)));
+  }
+  syncView();
+  document.querySelector(".toggle").addEventListener("click", e => {
+    const v = e.target.closest("button")?.dataset.v; if (!v || v===view) return;
+    view = v; syncView(); try{ localStorage.setItem("ml-view",v); }catch(err){} render(); backToList();
+  });
+  $("#download").addEventListener("click", () => { if (books.length) downloadList(); });
 
   const TICK = `<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
   function readMark(b){
