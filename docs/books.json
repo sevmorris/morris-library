@@ -274,6 +274,21 @@
     "added": "2026-10-31"
   },
   {
+    "id": "bolo",
+    "title": "Bolo: The Annals of the Dinochrome Brigade",
+    "author": "Keith Laumer",
+    "authorSort": "Laumer, Keith",
+    "publisher": "Berkley",
+    "year": "1976",
+    "isbn": "0-425-03450-X",
+    "price": "$1.50",
+    "format": "Mass-market paperback",
+    "notes": "Story collection.",
+    "summary": "Laumer's stories of the Bolos, giant self-aware tanks built to fight humanity's wars, some still loyal long after the people who built them are gone. They inspired many later Bolo books by other writers.",
+    "coverFile": "covers/bolo.jpg",
+    "added": "2026-11-10"
+  },
+  {
     "id": "bone-silence",
     "title": "Bone Silence",
     "author": "Alastair Reynolds",
@@ -683,6 +698,20 @@
     "summary": "An accident at a particle accelerator throws eight people into a string of warped realities, each shaped by the beliefs and fears of a different member of the group.",
     "coverId": "9251766",
     "added": "2026-11-01"
+  },
+  {
+    "id": "fail-safe",
+    "title": "Fail-Safe",
+    "author": "Eugene Burdick & Harvey Wheeler",
+    "authorSort": "Burdick, Eugene",
+    "publisher": "Dell",
+    "year": "1962",
+    "price": "$0.75",
+    "format": "Mass-market paperback",
+    "notes": "Dell no. 2459 on cover.",
+    "summary": "A technical fault sends a group of American bombers on an unstoppable mission to destroy Moscow, and the President has hours to prevent all-out nuclear war. A bestselling Cold War thriller.",
+    "coverId": "6500111",
+    "added": "2026-11-10"
   },
   {
     "id": "falling-free",
