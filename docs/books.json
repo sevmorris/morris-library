@@ -560,6 +560,21 @@
     "added": "2026-10-31"
   },
   {
+    "id": "deathworld",
+    "title": "Deathworld",
+    "author": "Harry Harrison",
+    "authorSort": "Harrison, Harry",
+    "publisher": "Wildside Press",
+    "year": "1960",
+    "series": "Deathworld",
+    "seriesNo": "1",
+    "format": "Ebook",
+    "notes": "Original magazine version.",
+    "summary": "Gambler Jason dinAlt wins a fortune for a stranger from Pyrrus, then insists on going home with him to the deadliest planet in the galaxy, where every living thing seems bent on killing the settlers. He sets out to learn why.",
+    "coverFile": "covers/deathworld.jpg",
+    "added": "2026-11-23"
+  },
+  {
     "id": "demon-4",
     "title": "Demon-4",
     "author": "David Mace",
@@ -2284,6 +2299,21 @@
     "summary": "Six stories of fantasy and prophecy by the author of A Passage to India, including The Machine Stops, the startling 1909 vision of a humanity dependent on a global machine.",
     "coverId": "9579147",
     "added": "2026-11-01"
+  },
+  {
+    "id": "the-ethical-engineer",
+    "title": "The Ethical Engineer",
+    "author": "Harry Harrison",
+    "authorSort": "Harrison, Harry",
+    "publisher": "Wildside Press",
+    "year": "1963",
+    "series": "Deathworld",
+    "seriesNo": "2",
+    "format": "Ebook",
+    "notes": "Magazine version of Deathworld 2.",
+    "summary": "Jason dinAlt is kidnapped by a self-righteous zealot who means to put him on trial. After a crash they are stranded together on a primitive world of slaves and masters, and Jason has to engineer his way out.",
+    "coverId": "13013523",
+    "added": "2026-11-23"
   },
   {
     "id": "the-evolutionary-void",
